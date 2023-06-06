@@ -9,6 +9,7 @@ describe("The Home Component", () => {
         const headerValue = screen.getByText('Trail Ahead'); 
         const pValue = screen.getByText('Blah');
         const imageValue = screen.getByAltText('heroImage');
+        const image2Value = screen.getByAltText('hikerImage')
         const button2Element = screen.getByRole("button", {
             name: /Get Started/i,
         })
@@ -18,9 +19,10 @@ describe("The Home Component", () => {
 
         expect(headerValue).toHaveTextContent('Trail Ahead');
         expect(buttonElement).toBeInTheDocument();
-        expect (imageValue).toBeInTheDocument()
-        expect(pValue).toHaveTextContent('Blah')
+        expect (imageValue).toBeInTheDocument();
+        expect(pValue).toHaveTextContent('Blah');
         expect(button2Element).toBeInTheDocument();
+        expect(image2Value).toBeInTheDocument();
     })
 })
 

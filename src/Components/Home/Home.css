@@ -1,3 +1,23 @@
 *{
     background: white;
 }
+
+.about{
+    background: greenyellow;
+    border: 10px solid blue;
+    border-radius: 30px solid red;
+}
+
+.about:hover{
+    background: purple;
+}
+
+.create{
+    background: aqua;
+    border: 10px solid red;
+}
+
+.create:hover{
+    background: navajowhite;
+}
+

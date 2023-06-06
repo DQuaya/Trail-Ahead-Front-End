@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../Button/Button'
 import hero from '../Home/hero.GIF'
 import './Home.css'
 import dude from '../Home/right.jpg'
@@ -13,9 +12,14 @@ const Home = () => {
         <h1>Trail Ahead</h1>
         <img alt="heroImage" src={hero}/>
         <h1 className="header">About Trail Ahead</h1>
+        <div className="left-half">
         <p>Blah</p>
-        <button>More Info</button>
-        <button>Get Started</button>
+        </div>
+        <div className="right-half">
+        <img alt="hikerImage" src={dude}/>
+        <button className='about'>More Info</button>
+        </div>
+        <button className='create'>Get Started</button>
     </div>
   )
 }
