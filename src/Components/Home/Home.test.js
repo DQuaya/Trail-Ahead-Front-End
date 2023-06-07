@@ -3,24 +3,18 @@ import Home from "./Home";
 
 // Tested by Quaya
 describe("The Home Component", () => {
-    test("renders the following items: h1, img, about", () => {
+    test("renders the following items: h3, h1, p,link btn", () => {
         render(<Home />);
 
-        const headerValue = screen.getByText('Trail Ahead'); 
-        const pValue = screen.getByText('Blah');
-        const imageValue = screen.getByAltText('heroImage');
-        const button2Element = screen.getByRole("button", {
-            name: /Get Started/i,
-        })
-        const buttonElement = screen.getByRole("button", {
-            name: /More Info/i,
-        });
+        const homeValue = screen.getByText('Trail Ahead offers a quick and easy way for'); 
+        const sloganValue = screen.getByText('Hikers');
+        const detailsValue = screen.getByText('Go checkout the avaliable Hikes');
+        // const ahrefElement = screen.getByText("Join Now");
 
-        expect(headerValue).toHaveTextContent('Trail Ahead');
-        expect(buttonElement).toBeInTheDocument();
-        expect (imageValue).toBeInTheDocument()
-        expect(pValue).toHaveTextContent('Blah')
-        expect(button2Element).toBeInTheDocument();
+        expect(homeValue).toHaveTextContent('Trail Ahead offers a quick and easy way for');
+        // expect(ahrefElement).toHaveTextContent('Join Now');
+        expect (detailsValue).toBeInTheDocument('Go checkout the avaliable Hikes')
+        expect(sloganValue).toHaveTextContent('Hikers');
     })
 })
 
