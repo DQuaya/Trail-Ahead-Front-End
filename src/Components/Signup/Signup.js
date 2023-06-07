@@ -1,21 +1,29 @@
+import './Signup.css';
+
 const Signup = () => {
     return (
-        <div>
+        <div className="container">
             <form>
-                <input required placeholder="Enter first name here..."></input>
-                <input required placeholder="Enter last name here..."></input>
-                <input required placeholder="Enter email here..."></input>
-                <input required placeholder="Enter password here..."></input>
-                <input required placeholder="Confirm password here..."></input>
-                <input required placeholder="Enter age here..."></input>
-                <input placeholder="Enter sex here..."></input>
-                <input required placeholder="Enter experience here..."></input>
-                <button>Sign up</button>
+                <h1><strong>Sign Up</strong></h1>
+                <p>It's quick and easy.</p>
+                <hr></hr>
+                <div className="input-boxes"></div>
+                <input required placeholder="First name"></input>
+                <input required placeholder="Last name "></input>             
+                <input required placeholder="Email "></input>
+                <input required placeholder="Password "></input>
+                <input required placeholder="Confirm password "></input>
+                <input required placeholder="Age"></input>
+                <input placeholder="Sex"></input>
+                <input required placeholder="Experience"></input>
+            
+                <button className="sgn-button">Sign up</button>
             </form>
             <span>
                 Already have an account? <a href="">Sign in</a>
             </span>
-        </div>
+            </div>
+    
     );
 };
 

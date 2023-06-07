@@ -3,6 +3,7 @@ import Button from '../Button/Button'
 import hero from '../Home/hero.GIF'
 import './Home.css'
 import dude from '../Home/right.jpg'
+import Signup from '../Signup/Signup'
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
             <img src={dude} alt="" />
         </div>
         <Button/>
+        <Signup/>
     </div>
   )
 }
