@@ -7,8 +7,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { css } from "@emotion/react";
 import { PropagateLoader } from "react-spinners";
+import Testing from "./Components/Testing/Testing";
 
-/* Quaya Coded This */
+
 function App() {
     const [loading, setLoading] = useState(false);
     const override = css`
@@ -36,6 +37,8 @@ function App() {
             ) : (
                 <>
                     <Navbar />
+                    {/* <Home /> */}
+                    {/* <Testing/> */}
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="about" element={<AboutPage />} />
@@ -43,6 +46,7 @@ function App() {
                         {/* <Route path='hikes' element={<Hikes/>}/>
                     <Route path='profile' element={<Contact/>}/> */}
                     </Routes>
+                    {/* <Testing/> */}
                 </>
             )}
         </div>
@@ -50,4 +54,4 @@ function App() {
 }
 
 export default App;
-/* Quaya Coded This */
+

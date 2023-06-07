@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 // import { Link } from 'react-scroll';
 import logo from '../Navbar/logo.png';
-import {Link} from 'react-router-dom'
-import AboutPage from '../About/AboutPage';
+import {NavLink} from 'react-router-dom'
+// import AboutPage from '../About/AboutPage';
 
 
 function Navbar(){
@@ -22,19 +22,19 @@ function Navbar(){
     
     return (
     <nav className={nav ? "nav active" : "nav"}>
-        <Link to='/' className='logo' smooth={true} duration={2000}>
+        <NavLink to='/' className='logo' smooth={true} duration={2000}>
             <img src={logo} alt="" />
-        </Link>   
+        </NavLink>   
 
         <input className='menu-btn' type='checkbox' id='menu-btn'/>
         <label className='menu-icon' for='menu-btn'>
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-                <li><Link to="/" smooth={true} duration={2000}>Home</Link></li>
-                <li><Link to="about" smooth={true} duration={2000}>About</Link></li>
-                <li><Link to="hike" smooth={true} duration={2000}>Hike</Link></li>
-                <li><Link to="profile" smooth={true} duration={2000}>Profile</Link></li> 
+                <li><NavLink to="/" smooth={true} duration={2000}>Home</NavLink></li>
+                <li><NavLink to="about" smooth={true} duration={2000}>About</NavLink></li>
+                <li><NavLink to="hike" smooth={true} duration={2000}>Hike</NavLink></li>
+                <li><NavLink to="profile" smooth={true} duration={2000}>Profile</NavLink></li> 
         </ul>
         
     </nav>
