@@ -4,14 +4,26 @@
     box-sizing: border-box;
 }
 
+
 .formContainer {
     margin: 20% auto;
     padding: 20px; 
+
     display: flex;
     flex-direction: column;
     background-color: white;
     max-width: fit-content;
 }
+
+
+form-container {
+    background-color: rgb(244, 5, 5);
+    width: 30em;
+     height: 5em; 
+    color: white;  
+    
+
+
 
 form {
     display: flex;
@@ -19,6 +31,7 @@ form {
     align-items: center;
     padding: 1rem;
     background-color: white;
+
 }
 
 input {
@@ -33,12 +46,7 @@ input {
     width: 10rem;
 }
 
-.sgn-button {
-    width: 10rem;
-    height: 3rem;
-    color: white;
-    padding: 12px 20px;
-}
+
 
 .horizontalRow {
     display: flex;
