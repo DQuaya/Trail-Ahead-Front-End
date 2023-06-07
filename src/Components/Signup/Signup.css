@@ -7,7 +7,7 @@
 
 form {
 
-    background-color: white;
+    /* background-image: url('https://www.thepackablelife.com/wp-content/uploads/2020/01/what-to-bring-day-hike.jpg'); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ form {
 }
 
 form-container {
-    background-color: whitesmoke;
+    background-color: rgb(244, 5, 5);
     width: 30em;
      height: 5em; 
     color: white;  
@@ -40,9 +40,10 @@ input {
 }
 
 .sgn-button {
+    background-color: green;
     width: 65%;
     height: 80%;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 12px 20px;
 
 

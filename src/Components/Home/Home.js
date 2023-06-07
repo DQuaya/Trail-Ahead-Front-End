@@ -15,9 +15,8 @@ const Home = () => {
             <Link to='/signup' className='logo' smooth={true} duration={2000}>
               <a href='#' className='header-btn'>Join Now</a>
             </Link> 
-          
+          </div>
         </div>
-
     </div>
   )
 }
