@@ -2,7 +2,7 @@
 import './App.css';
 import Home from './Components/Home/Home';
 import AboutPage from './Components/About/AboutPage';
-import './Components/About/AboutPage.css'
+// import './Components/About/AboutPage.css'
 
 import Navbar from './Components/Navbar/Navbar';
 import React, {useState, useEffect} from 'react';
@@ -41,8 +41,8 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='products' element={<AboutPage />}/>
-                    <Route path='about' element={<Hikes/>}/> */}
-                    {/* <Route path='contact' element={<Contact/>}/> */}
+                    {/* <Route path='about' element={<Hikes/>}/>
+                    <Route path='contact' element={<Contact/>}/> */}
                 </Routes>
                 </>
             }

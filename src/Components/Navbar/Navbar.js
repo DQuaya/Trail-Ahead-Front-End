@@ -31,9 +31,9 @@ function Navbar(){
         </label>
         <ul className='menu'>
                 <li><Link to="/" smooth={true} duration={2000}>Home</Link></li>
-                {/* <li><Link to="products" smooth={true} duration={2000}>Guns</Link></li>
                 <li><Link to="about" smooth={true} duration={2000}>About</Link></li>
-                <li><Link to="contact" smooth={true} duration={2000}>Contact</Link></li> */}
+                <li><Link to="hike" smooth={true} duration={2000}>Hike</Link></li>
+                <li><Link to="profile" smooth={true} duration={2000}>Profile</Link></li> 
         </ul>
         
     </nav>
