@@ -1,30 +1,24 @@
 import React from 'react'
-import Button from '../Button/Button'
-import hero from '../Home/hero.GIF'
-import './Home.css'
-import dude from '../Home/right.jpg'
+import {Link} from 'react-router-dom'
+import Signup from '../Signup/Signup'
 
 const Home = () => {
   return (
-    <div>
-        <h1>Home</h1>
-        <img src={hero} alt="" />
-        <h1>About Trail Ahead</h1>
-        <div class="about">
-            Trail Ahead was created by four software engineers.
-            Aimed toward those who have a passion or interest in hiking.
-            Trail Ahead bring those who want to start hiking and those who have 
-            experience in hiking together.
-            <div class="button">
-            <Button/>
+    <div id='main'>
+        <div className='header-heading'>
+            <h3>Trail Ahead offers blah Blah </h3>
+            <h1><span>Hikers </span>Meet <br/>Hikers</h1>
+            <p className='details'>Go checkout the avaliable Hikes</p>
+            <div className='header-btns'>
+            <Link to='../Signup' className='logo' smooth={true} duration={2000}>
+              <a href='#' className='header-btn'>Join Now</a>
+            </Link>
             </div>
         </div>
-        <div> 
-            <img src={dude} alt="" />
-        </div>
-        <Button/>
     </div>
   )
 }
 
 export default Home
+
+// Coded by Quaya
