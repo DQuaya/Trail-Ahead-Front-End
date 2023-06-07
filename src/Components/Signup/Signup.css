@@ -1,20 +1,20 @@
- *{
-    /* background: url('./NatureBckGrnd.png');  */
+* {
     margin: 0;
-    /* box-sizing: border-box; */
     border-radius: 5px;
- }
+    box-sizing: border-box;
+}
 
-form {
 
-    /* background-image: url('https://www.thepackablelife.com/wp-content/uploads/2020/01/what-to-bring-day-hike.jpg'); */
+.formContainer {
+    margin: 20% auto;
+    padding: 20px; 
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 6.0rem;
-
-
+    background-color: white;
+    max-width: fit-content;
 }
+
 
 form-container {
     background-color: rgb(244, 5, 5);
@@ -22,30 +22,39 @@ form-container {
      height: 5em; 
     color: white;  
     
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
 
 }
 
 input {
-    width: 50%;
+    width: 100%;
     background-color: azure;
-    display: block;
-    margin: 8px 0;
+    margin: 2px 0px;
     border-radius: 5px;
-    padding: 12px 20px;
-
+    padding: 12px 16px;
 }
 
-.sgn-button {
-    background-color: green;
-    width: 65%;
-    height: 80%;
-    color: rgb(255, 255, 255);
-    padding: 12px 20px;
+.horizontalRow > input {
+    width: 10rem;
+}
 
 
 
+.horizontalRow {
+    display: flex;
+    gap: 0.5rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }

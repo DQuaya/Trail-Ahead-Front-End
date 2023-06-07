@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 // import Signup from '../Signup/Signup'
 
-
 const Home = () => {
+
   return (
     <div id='main'>
         <div className='header-heading'>
@@ -22,5 +22,6 @@ const Home = () => {
 }
 
 export default Home
+
 
 // Coded by Quaya
