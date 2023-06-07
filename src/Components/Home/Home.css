@@ -1,16 +1,14 @@
-*{
-    background: green;
+
+.home{
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.about{
-    background-color: brown;
-    color: white;
-    display: flex;
-    width: 350px;
-    height: 400px;
+
+
+.left{
+    padding: 2rem;
+    padding-top: 1.5rem;
 }
 
-.button{
-    display: flex;
-    flex-direction: column;
-}
