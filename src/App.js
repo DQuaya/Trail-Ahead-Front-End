@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { css } from "@emotion/react";
 import { PropagateLoader } from "react-spinners";
-import Testing from "./Components/Testing/Testing";
+import Aboutsection from "./Components/Aboutsection/Aboutsection";
 
 
 function App() {

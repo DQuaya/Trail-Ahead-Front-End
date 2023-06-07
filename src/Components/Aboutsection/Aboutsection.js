@@ -1,5 +1,5 @@
 import React from 'react'
-import './Testing.css'
+import './Aboutsection.css'
 import image1 from "../../assets/image1.jpeg"
 import image2 from "../../assets/image2.jpg"
 import image3 from "../../assets/image3.jpg"
@@ -12,7 +12,7 @@ import tick from "../../assets/tick.png"
 import {Link} from 'react-router-dom'
 // import { Color, ColorKeyframeTrack } from 'three'
 
-const Testing = () => {
+const Aboutsection = () => {
   return (
     <div className="Reasons" id="reasons">
         <div className="left-r">
@@ -71,5 +71,5 @@ const Testing = () => {
   )
 }
 
-export default Testing
+export default Aboutsection
 
