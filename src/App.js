@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './Components/Home/Home';
+import AboutPage from './Components/About/AboutPage';
+import './Components/About/AboutPage.css'
+
 import Navbar from './Components/Navbar/Navbar';
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {css} from "@emotion/react"
 import { PropagateLoader } from 'react-spinners';
+
 
 /* Quaya Coded This */
 function App() {
@@ -26,6 +30,8 @@ function App() {
 
   return (
     <div className="App">
+
+    
             
             {
                 loading ? <PropagateLoader color={"#04700c"} Loading={loading} css={override} size={40}/>
@@ -34,13 +40,14 @@ function App() {
                     <Navbar/>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    {/* <Route path='products' element={<About/>}/>
+                    <Route path='products' element={<AboutPage />}/>
                     <Route path='about' element={<Hikes/>}/> */}
                     {/* <Route path='contact' element={<Contact/>}/> */}
                 </Routes>
                 </>
             }
         </div>
+
   );
 }
 

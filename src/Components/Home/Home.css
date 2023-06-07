@@ -1,9 +1,14 @@
+
 .home{
+
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .left{
     padding: 2rem;
     padding-top: 1.5rem;
 }
+
