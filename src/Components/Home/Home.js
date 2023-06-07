@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Testing from "../Testing/Testing";
+import Aboutsection from "../Aboutsection/Aboutsection";
 
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <div className="about-section">
 
-         <Testing/>
+         <Aboutsection/>
         </div>
     </div>
   )
