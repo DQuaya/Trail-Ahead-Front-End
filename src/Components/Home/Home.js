@@ -1,21 +1,20 @@
 import React from 'react'
-import Button from '../Button/Button'
-import hero from '../Home/hero.GIF'
-import './Home.css'
-import dude from '../Home/right.jpg'
-
-
-// Coded by Quaya
+import {Link} from 'react-router-dom'
+import Signup from '../Signup/Signup'
 
 const Home = () => {
   return (
-    <div>
-        <h1>Trail Ahead</h1>
-        <img alt="heroImage" src={hero}/>
-        <h1 className="header">About Trail Ahead</h1>
-        <p>Blah</p>
-        <button>More Info</button>
-        <button>Get Started</button>
+    <div id='main'>
+        <div className='header-heading'>
+            <h3>Trail Ahead offers blah Blah </h3>
+            <h1><span>Hikers </span>Meet <br/>Hikers</h1>
+            <p className='details'>Go checkout the avaliable Hikes</p>
+            <div className='header-btns'>
+            <Link to='../Signup' className='logo' smooth={true} duration={2000}>
+              <a href='#' className='header-btn'>Join Now</a>
+            </Link>
+            </div>
+        </div>
     </div>
   )
 }
