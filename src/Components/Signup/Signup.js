@@ -12,7 +12,7 @@ const Signup = () => {
                 <p>It's quick and easy.</p>
                 <hr></hr>
                 <div className="horizontalRow">
-                    <label> First Name
+                    <label className="fname"> First Name
                         <input
                             type="text"
                             name="firstName"
@@ -20,7 +20,7 @@ const Signup = () => {
                             required
                         ></input>
                     </label>
-                    <label>
+                    <label className="lname">
                         Last Name
                         <input
                             type="text"
@@ -30,7 +30,7 @@ const Signup = () => {
                         ></input>
                     </label>
                 </div>
-                <label>
+                <label className="email">
                     Email
                     <input
                         type="text"
@@ -39,7 +39,7 @@ const Signup = () => {
                         required
                     ></input>
                 </label>
-                <label>
+                <label className="password">
                     Password
                     <input
                         type="password"
@@ -48,7 +48,7 @@ const Signup = () => {
                         required
                     ></input>
                 </label>
-                <label>
+                <label className="confirm">
                     Confirm Password
                     <input
                         type="password"
@@ -58,7 +58,7 @@ const Signup = () => {
                     ></input>
                 </label>
                 <div className="horizontalRow">
-                    <label>
+                    <label className="age">
                         Age
                         <input name="age" placeholder="Age" required></input>
                     </label>
