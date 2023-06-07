@@ -9,7 +9,7 @@ import image4 from "../../assets/image4.jpg"
  import gdp from "../../assets/img3.png"
  import dnb from "../../assets/img1.png"
 import tick from "../../assets/tick.png"
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // import { Color, ColorKeyframeTrack } from 'three'
 
 const Testing = () => {
@@ -46,9 +46,9 @@ const Testing = () => {
                     <img src={tick} alt="" />
                     <span>Enjoy outdoors</span>
                 </div> 
-                {/* <Link to='/about' className='logo' smooth={true} duration={2000}>
+                <Link to='/about' className='logo' smooth={true} duration={2000}>
               <a href='#' className='header-btn'>Read More</a>
-            </Link> */}
+            </Link> 
             </div>
             <span 
               style={{
@@ -65,6 +65,7 @@ const Testing = () => {
                 <img src={azr} alt="" />
                 <img src={gdp} alt="" />
             </div> 
+            
         </div>
     </div>
   )
