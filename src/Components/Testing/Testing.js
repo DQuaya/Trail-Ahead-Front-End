@@ -46,8 +46,8 @@ const Testing = () => {
                     <img src={tick} alt="" />
                     <span>Enjoy outdoors</span>
                 </div> 
-                <Link to='/signup' className='logo' smooth={true} duration={2000}>
-              <a href='#' className='header-btn'>Join Now</a>
+                <Link to='/about' className='logo' smooth={true} duration={2000}>
+              <a href='#' className='header-btn'>Read More</a>
             </Link> 
             </div>
             <span 
