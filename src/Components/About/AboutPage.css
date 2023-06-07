@@ -1,18 +1,36 @@
 body {
   background-color: #718d5a;
+  color: #b3320bd0;
 }
 
-.mission-box {
-  background-color: #f8fff2;
-  margin: 0%;
+.imgBack {
+  background-image: url("/Users/corcoding/Workspace/capstone-project/Trail-Ahead-Front-End/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+width: 500%;
+    /* background-position:center ;
+    background-attachment: fixed; */
 }
 
 .impactBox {
-  background-color: #f8fff2;
-  margin: 0%;
+  /* background-color: #f8fff2; */
+  color: #b3320bea;
 }
 
-
 .impactHeader {
-    text-align: left;
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.box {
+  width: 18%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
