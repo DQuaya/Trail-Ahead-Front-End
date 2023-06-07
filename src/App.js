@@ -2,7 +2,7 @@
 import './App.css';
 import Home from './Components/Home/Home';
 import AboutPage from './Components/About/AboutPage';
-// import './Components/About/AboutPage.css'
+import Signup from './Components/Signup/Signup'
 
 import Navbar from './Components/Navbar/Navbar';
 import React, {useState, useEffect} from 'react';
@@ -40,9 +40,10 @@ function App() {
                     <Navbar/>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='products' element={<AboutPage />}/>
-                    {/* <Route path='about' element={<Hikes/>}/>
-                    <Route path='contact' element={<Contact/>}/> */}
+                    <Route path='about' element={<AboutPage />}/>
+                    <Route path='signup' element={<Signup />}/>
+                    {/* <Route path='hikes' element={<Hikes/>}/>
+                    <Route path='profile' element={<Contact/>}/> */}
                 </Routes>
                 </>
             }
