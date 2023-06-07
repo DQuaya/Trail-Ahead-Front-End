@@ -1,6 +1,7 @@
 
 import './App.css';
 import Home from './Components/Home/Home';
+
 import AboutPage from './Components/About/AboutPage';
 import Signup from './Components/Signup/Signup'
 
@@ -9,6 +10,7 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {css} from "@emotion/react"
 import { PropagateLoader } from 'react-spinners';
+
 
 
 /* Quaya Coded This */
@@ -31,6 +33,7 @@ function App() {
   return (
     <div className="App">
 
+
     
             
             {
@@ -48,6 +51,7 @@ function App() {
                 </>
             }
         </div>
+
 
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
+
 import {Link} from 'react-router-dom'
 // import Signup from '../Signup/Signup'
+
 
 const Home = () => {
   return (
@@ -13,8 +15,9 @@ const Home = () => {
             <Link to='/signup' className='logo' smooth={true} duration={2000}>
               <a href='#' className='header-btn'>Join Now</a>
             </Link> 
-            </div>
+          
         </div>
+
     </div>
   )
 }

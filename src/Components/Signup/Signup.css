@@ -1,0 +1,50 @@
+ *{
+    /* background: url('./NatureBckGrnd.png');  */
+    margin: 0;
+    /* box-sizing: border-box; */
+    border-radius: 5px;
+ }
+
+form {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.0rem;
+
+
+}
+
+form-container {
+    background-color: whitesmoke;
+    width: 30em;
+     height: 5em; 
+    color: white;  
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+
+input {
+    width: 50%;
+    background-color: azure;
+    display: block;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding: 12px 20px;
+
+}
+
+.sgn-button {
+    width: 65%;
+    height: 80%;
+    color: white;
+    padding: 12px 20px;
+
+
+
+}
