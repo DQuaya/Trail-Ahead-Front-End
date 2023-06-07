@@ -1,7 +1,8 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-// import Signup from '../Signup/Signup'
+import Testing from "../Testing/Testing";
+
 
 const Home = () => {
 
@@ -16,6 +17,10 @@ const Home = () => {
               <a href='#' className='header-btn'>Join Now</a>
             </Link> 
           </div>
+        </div>
+        <div className="about-section">
+
+         <Testing/>
         </div>
     </div>
   )
