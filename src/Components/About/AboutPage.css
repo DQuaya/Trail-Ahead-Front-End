@@ -4,7 +4,7 @@ body {
 }
 
 .imgBack {
-  background-image: url("/Users/corcoding/Workspace/capstone-project/Trail-Ahead-Front-End/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
+  background-image: url("./8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
