@@ -1,0 +1,17 @@
+.plannedHikeContainer {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    background-color: white;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.plannedHikeContainer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 12px 16px;
+}
