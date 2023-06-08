@@ -15,7 +15,5 @@ describe("The about component", () => {
 
     const ImpactHeader = screen.getByText(/Make an Impact/i);
     expect(ImpactHeader).toBeInTheDocument();
-
-
   });
 });
