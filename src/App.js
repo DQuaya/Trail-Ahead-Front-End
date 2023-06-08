@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./Components/Home/Home";
 import AboutPage from "./Components/About/AboutPage";
 import Signup from "./Components/Signup/Signup";
+import Profile from "./Components/Profile/Profile";
 import Navbar from "./Components/Navbar/Navbar";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -43,8 +44,8 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="about" element={<AboutPage />} />
                         <Route path="signup" element={<Signup />} />
-                        {/* <Route path='hikes' element={<Hikes/>}/>
-                    <Route path='profile' element={<Contact/>}/> */}
+                        {/* <Route path='hikes' element={<Hikes/>}/> */}
+                        <Route path='profile' element={<Profile/>}/> 
                     </Routes>
                     {/* <Testing/> */}
                 </>
