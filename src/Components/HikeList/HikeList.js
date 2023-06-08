@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PlannedHike from "./PlannedHike";
+import coverImage from "../../assets/mountains.jpg";
 
 const HikeList = () => {
     const [hikes, setHikes] = useState([
@@ -39,10 +40,11 @@ const HikeList = () => {
 
     return (
         <div>
+            <img src={coverImage} alt="" />
             <h1>Available Hikes</h1>
             {hikes.map((hike) => (
-                <PlannedHike 
-                key={hike.name}
+                <PlannedHike
+                    key={hike.name}
                     name={hike.name}
                     pictureAltText={hike.pictureAltText}
                     experience={hike.experience}
