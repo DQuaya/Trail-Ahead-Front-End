@@ -21,6 +21,8 @@ const Home = () => {
         <div className="about-section">
 
          <Aboutsection/>
+
+         
         </div>
     </div>
   )

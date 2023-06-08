@@ -1,16 +1,17 @@
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { PropagateLoader } from "react-spinners";
+import { css } from "@emotion/react";
+import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import AboutPage from "./Components/About/AboutPage";
 import Signup from "./Components/Signup/Signup";
-import Profile from "./Components/Profile/Profile";
+import Login from "./Components/Home/Login/Login";
 import Hikes from "./Components/Hikes/Hikes";
-import Navbar from "./Components/Navbar/Navbar";
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { css } from "@emotion/react";
-import { PropagateLoader } from "react-spinners";
+import Profile from "./Components/Profile/Profile";
+import Footer from "./Components/Footer/Footer";
 import Aboutsection from "./Components/Aboutsection/Aboutsection";
-
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -45,10 +46,13 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="about" element={<AboutPage />} />
                         <Route path="signup" element={<Signup />} />
-                        <Route path='hike' element={<Hikes/>}/> 
-                        <Route path='profile' element={<Profile/>}/> 
+                        <Route path="login" element={<Login />} />
+                        {/* <Route path='hikes' element={<Hikes/>}/>
+                    <Route path='profile' element={<Contact/>}/> */}
+                        <Route path="hike" element={<Hikes />} />
+                        <Route path="profile" element={<Profile />} />
                     </Routes>
-                   
+                    <Footer />
                 </>
             )}
         </div>
@@ -56,4 +60,3 @@ function App() {
 }
 
 export default App;
-
