@@ -9,8 +9,8 @@ function AboutPage() {
     <div className="text-containers">
       <div className="imgBack"></div>
 
-      <div className="mission-box">
         <h1> Mission </h1>
+      <div className="mission-box">
 
         <p>
           To foster healthy connections, new friendships, and shared memories

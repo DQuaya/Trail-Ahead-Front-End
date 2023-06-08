@@ -11,7 +11,7 @@ import Login from "./Components/Home/Login/Login";
 import Hikedetails from "./Components/Hikedetails/Hikedetails";
 import Hikes from "./Components/Hikes/Hikes";
 import Profile from "./Components/Profile/Profile";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import Aboutsection from "./Components/Aboutsection/Aboutsection";
 
 
@@ -53,7 +53,7 @@ function App() {
                         <Route path="hike" element={<Hikes />} />
                         <Route path="profile" element={<Profile />} />
                     </Routes>
-                    <Footer />
+                    
                 </>
             )}
         </div>

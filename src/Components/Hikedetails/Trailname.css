@@ -1,3 +1,8 @@
-.title-trl {
-    background-color: brown;
+.article-head{
+    background: greenyellow;
+    /* width: 200px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
