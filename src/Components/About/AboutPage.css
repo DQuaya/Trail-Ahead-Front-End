@@ -5,6 +5,7 @@ body {
 /* #718d5a; */
 
 .imgBack {
+
     background-image: url("/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
     background-size: cover;
     background-position: center;
@@ -15,7 +16,7 @@ body {
     margin-left: -100px;
     border-radius: 4px;
     /* background-position:center ;
-    background-attachment: fixed; */
+
 }
 
 .imgContainer img {

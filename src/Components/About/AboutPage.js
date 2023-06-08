@@ -1,8 +1,8 @@
 import "./AboutPage.css";
-import img1 from "../About/img1.png";
-import img2 from "../About/img2.png";
-import img3 from "../About/img3.png";
-import img4 from "../About/img4.png";
+// import img1 from "../About/img1.png";
+// import img2 from "../About/img2.png";
+// import img3 from "../About/img3.png";
+// import img4 from "../About/img4.png";
 
 function AboutPage() {
   return (
@@ -35,14 +35,14 @@ function AboutPage() {
       <br />
       <br />
 
-      <div className="imageBoxes">
+      {/* <div className="imageBoxes">
         <img src={img1} alt="" />
         <img src={img2} alt="" />
         <img src={img3} alt="" />
         <img src={img4} alt="" />
-      </div>
+      </div> */}
     </div>
   );
 }
 
-export default AboutPage;
+ export default AboutPage;
