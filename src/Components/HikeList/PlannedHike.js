@@ -1,32 +1,41 @@
-const PlannedHike = ({name, pictureSource, pictureAltText, experience, timeDate, groupSize, maxGroupSize}) => {
+import "./PlannedHike.css";
+
+const PlannedHike = ({
+    name,
+    pictureSource,
+    pictureAltText,
+    experience,
+    timeDate,
+    groupSize,
+    maxGroupSize,
+}) => {
     return (
-        <div>
-            PlannedHike
+        <div className="plannedHikeContainer">
             <div>
-                {name}
-                <img src={pictureSource} alt={pictureAltText}  />
+                <h3>{name}</h3>
+                <img src={pictureSource} alt={pictureAltText} />
             </div>
             <div>
-                Experience
-                {experience}
-
+                <h3>Experience</h3>
+                <span>{experience}</span>
             </div>
             <div>
-                Time and Date
-                {timeDate}
+                <h3>Time and Date</h3>
+                <span>{timeDate}</span>
             </div>
             <div>
-                Group Size 
-                {groupSize} / {maxGroupSize}
+                <h3>Group Size</h3>
+                <span>
+                    {groupSize} / {maxGroupSize}
+                </span>
             </div>
             <div>
-                Availability
-                {(groupSize !== maxGroupSize) ? "active" : "full"}
+                <h3>Availability</h3>
+                <span>{groupSize !== maxGroupSize ? "active" : "full"}</span>
             </div>
+            <button>View</button>
         </div>
-    )
-}
+    );
+};
 
-export default PlannedHike
-
-
+export default PlannedHike;
