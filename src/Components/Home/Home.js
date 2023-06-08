@@ -2,6 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import Aboutsection from "../Aboutsection/Aboutsection";
+import Footer from "../Footer/Footer";
 
 
 const Home = () => {
@@ -21,6 +22,10 @@ const Home = () => {
         <div className="about-section">
 
          <Aboutsection/>
+
+         <section>
+          <Footer />
+         </section>
         </div>
     </div>
   )
