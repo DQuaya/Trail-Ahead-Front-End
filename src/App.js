@@ -8,10 +8,12 @@ import Home from "./Components/Home/Home";
 import AboutPage from "./Components/About/AboutPage";
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Home/Login/Login";
+import Hikedetails from "./Components/Hikedetails/Hikedetails";
 import Hikes from "./Components/Hikes/Hikes";
 import Profile from "./Components/Profile/Profile";
 import Footer from "./Components/Footer/Footer";
 import Aboutsection from "./Components/Aboutsection/Aboutsection";
+
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -47,8 +49,7 @@ function App() {
                         <Route path="about" element={<AboutPage />} />
                         <Route path="signup" element={<Signup />} />
                         <Route path="login" element={<Login />} />
-                        {/* <Route path='hikes' element={<Hikes/>}/>
-                    <Route path='profile' element={<Contact/>}/> */}
+                        <Route path='hikedetails' element={<Hikedetails/>}/>
                         <Route path="hike" element={<Hikes />} />
                         <Route path="profile" element={<Profile />} />
                     </Routes>
