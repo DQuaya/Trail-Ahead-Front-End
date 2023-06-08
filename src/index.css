@@ -27,6 +27,8 @@ input{
 }
 .logo img{
     width: 220px;
+    height: 100px;
+    margin-left: -200px;
 }
 #main{
     width:100%;

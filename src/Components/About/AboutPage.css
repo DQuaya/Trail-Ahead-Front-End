@@ -6,7 +6,7 @@ body {
 
 .imgBack {
 
-    background-image: url("/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
+    background-image: url("./8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,8 +14,8 @@ body {
     width: 1550px;
     margin-bottom: 100px;
     margin-left: -100px;
+    margin-top: -50px;
     border-radius: 4px;
-    /* background-position:center ;
 
 }
 
@@ -26,6 +26,9 @@ body {
 }
 .mission-box {
     font-size: larger;
+    border: 5px solid rgb(255, 158, 3);
+    background: white;
+   
 }
 
 .mission-box,
