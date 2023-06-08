@@ -1,71 +1,71 @@
 body {
-  background-color: #3b6942;
-  color: #e35609;
+    background-color: #3b6942;
+    color: #e35609;
 }
 /* #718d5a; */
 
 .imgBack {
-  background-image: url("/Users/corcoding/Workspace/capstone-project/Trail-Ahead-Front-End/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90vh;
-  width: 1550px;
-  margin-bottom: 100px;
-  margin-left: -100px;
-  border-radius: 4px;
-  /* background-position:center ;
+    background-image: url("/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 1550px;
+    margin-bottom: 100px;
+    margin-left: -100px;
+    border-radius: 4px;
+    /* background-position:center ;
     background-attachment: fixed; */
 }
 
 .imgContainer img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .mission-box {
-  font-size: larger;
+    font-size: larger;
 }
 
 .mission-box,
 p {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .impactBox {
-  /* background-color: #f8fff2; */
-  color: #e35609;
-  font-size: 25px;
+    /* background-color: #f8fff2; */
+    color: #e35609;
+    font-size: 25px;
 }
 
 .impactHeader {
-  text-align: center;
+    text-align: center;
 }
 
 .section-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .imageBoxes {
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-  width: 300px;
-  justify-content: space-between;
-  margin-left: 100px;
-  padding: 10px;
-  /* margin-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 100px;
+    padding: 10px;
+    /* margin-top: 50px; */
 }
 
 @media only screen and (max-width: 475px) and (orientation: portrait) {
-  .imgBack {
-    background-size: contain; /* Adjust background-size property */
-    width: 100vw; /* Set the width to 100% viewport width */
-    height: 100vh; /* Set the height to 100% viewport height */
-    margin: 0; /* Remove the margins */
-  }
-  .imageBoxes {
-  }
+    .imgBack {
+        background-size: contain; /* Adjust background-size property */
+        width: 100vw; /* Set the width to 100% viewport width */
+        height: 100vh; /* Set the height to 100% viewport height */
+        margin: 0; /* Remove the margins */
+    }
+    .imageBoxes {
+    }
 }

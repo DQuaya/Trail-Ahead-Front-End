@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Aboutsection from "../Aboutsection/Aboutsection";
 
 
-
 const Home = () => {
 
   return (

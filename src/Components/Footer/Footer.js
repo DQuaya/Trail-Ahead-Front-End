@@ -1,4 +1,4 @@
-import "/Users/corcoding/React/Trail-Ahead-Front-End/src/Components/Footer/Footer.css";
+import './Footer.css'
 
 const Footer = () => {
     return (
