@@ -1,4 +1,5 @@
 import "./Signup.css";
+import Login from "../Home/Login/Login";
 
 const Signup = () => {
     
@@ -79,7 +80,7 @@ const Signup = () => {
                 <button className="sgn-button">Sign up</button>
             </form>
             <span>
-                Already have an account? <a href="">Sign in</a>
+                Already have an account? <a href="/login">Sign in</a>
             </span>
         </div>
     );

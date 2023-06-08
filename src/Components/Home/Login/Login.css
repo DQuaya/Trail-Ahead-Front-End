@@ -1,0 +1,13 @@
+.log-bttn {
+    width: 13%;
+    height: 450%;
+    background-color: #CB5B00;
+    color: white;
+    padding: 12px 20px;
+}
+
+.frm-container {
+    justify-content: flex;
+}
+
+

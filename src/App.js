@@ -5,6 +5,7 @@ import Signup from "./Components/Signup/Signup";
 import Profile from "./Components/Profile/Profile";
 import Hikes from "./Components/Hikes/Hikes";
 import Navbar from "./Components/Navbar/Navbar";
+import Login from "./Components/Home/Login/Login";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { css } from "@emotion/react";
@@ -45,8 +46,15 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="about" element={<AboutPage />} />
                         <Route path="signup" element={<Signup />} />
+
+                        <Route path="login" element={<Login />} />
+                        
+                        {/* <Route path='hikes' element={<Hikes/>}/>
+                    <Route path='profile' element={<Contact/>}/> */}
+
                         <Route path='hike' element={<Hikes/>}/> 
                         <Route path='profile' element={<Profile/>}/> 
+
                     </Routes>
                    
                 </>
