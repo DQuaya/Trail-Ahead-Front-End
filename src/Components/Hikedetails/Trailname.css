@@ -1,3 +1,7 @@
-.title-trl {
-    background-color: brown;
+.article-head {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    width: 65%;
+    height: 80%;
 }

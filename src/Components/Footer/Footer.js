@@ -3,6 +3,8 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer-bttm'>
+        
+
             <form>
                 <h1><strong>JOIN OUR MAILING LIST</strong></h1>
 
@@ -12,6 +14,7 @@ const Footer = () => {
                     <button className='sub-bttn'>SUBSCRIBE</button>
                     </div>
             </form>
+    
         </div>
       )
 }

@@ -1,3 +1,5 @@
+import './trailname.css';
+
 
 const TrailName = () => {
 

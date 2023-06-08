@@ -5,9 +5,6 @@ const Login = () => {
 
   return (
     <div className="frm-contain">
-
-        
-
     <form>
         <h1><strong>Log In</strong></h1>
         <label className="username">Username<input type="text" name="Username" placeholder="username" required></input></label>
