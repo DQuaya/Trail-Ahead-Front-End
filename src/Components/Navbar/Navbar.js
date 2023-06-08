@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 // import { Link } from 'react-scroll';
 import logo from '../Navbar/logo.png';
 import {NavLink} from 'react-router-dom'
-// import AboutPage from '../About/AboutPage';
+
 
 
 function Navbar(){
