@@ -11,10 +11,10 @@ const Hikedetails = () => {
     <div className='hike-details'>
         <CoverImage/>
         <TrailName/>
-        <ArticleInfo />
-        <ProfilePix />
-        <WYSK />
-        <WYSKArt />
+        <ArticleInfo/>
+        <ProfilePix/>
+        <WYSK/>
+        <WYSKArt/>
     </div>
   )
 }
