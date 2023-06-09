@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import coverImage from "../../assets/mountains.jpg";
+// import coverImage from "../../assets/mountains.jpg";
 import PlannedHike from "./PlannedHike";
 import './HikeList.css'
 
