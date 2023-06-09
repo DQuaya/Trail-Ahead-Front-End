@@ -3,10 +3,7 @@ import React, {useState} from 'react';
 import logo from '../Navbar/logo.png';
 import {NavLink} from 'react-router-dom'
 
-
-
 function Navbar(){
-  
     const [nav, setnav] = useState(false);
 
     const changeBackground =()=>{

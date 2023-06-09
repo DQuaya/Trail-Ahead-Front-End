@@ -1,4 +1,5 @@
 import "./PlannedHike.css";
+import { Link } from "react-router-dom"
 
 const PlannedHike = ({
     name,
@@ -8,6 +9,7 @@ const PlannedHike = ({
     timeDate,
     groupSize,
     maxGroupSize,
+    hikeId,
 }) => {
     return (
         <div className="plannedHikeContainer">
@@ -33,7 +35,11 @@ const PlannedHike = ({
                 <h3>Availability</h3>
                 <span>{groupSize !== maxGroupSize ? "active" : "full"}</span>
             </div>
-            <button>View</button>
+            <div>
+                <Link to={ (hikeId !== undefined) ? `/hike/${hikeId}` : `/hike` }>
+                    View Hike
+                </Link>
+            </div>
         </div>
     );
 };
