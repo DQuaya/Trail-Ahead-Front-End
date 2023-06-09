@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./AboutPage.css";
+import {motion} from 'framer-motion'
 // import img1 from "../About/img1.png";
 // import img2 from "../About/img2.png";
 // import img3 from "../About/img3.png";
@@ -11,6 +12,7 @@ import right from './right.png'
 import { Color } from "three";
 
 function AboutPage() {
+  const transition = {type: "spring", duration: 3}
   const [selected, setSelected] = useState(0);
   const cLength = creatorsData.length
   return (
@@ -53,8 +55,12 @@ function AboutPage() {
           </div>
 
           <div className="right-c">
-            <div></div>
-            <div></div>
+            <motion.div initial={{ opacity: 0, x: -100}}
+            transition={{ ...transition, duration: 2}}
+            whileInView={{ opacity: 1, x:0}}></motion.div>
+            <motion.div initial={{ opacity:0, x: 100}}
+            transition={{ ...transition, duration: 2}}
+            whileInView={{ opacity: 0, x:0}}></motion.div>
             <img src={creatorsData[selected].image} alt="" />
 
             <div className="arrows">

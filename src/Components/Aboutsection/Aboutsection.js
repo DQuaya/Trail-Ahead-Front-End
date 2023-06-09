@@ -10,6 +10,7 @@ import image4 from "../../assets/image4.jpg"
  import dnb from "../../assets/img1.png"
 import tick from "../../assets/tick.png"
 import {Link} from 'react-router-dom'
+
 // import { Color, ColorKeyframeTrack } from 'three'
 
 const Aboutsection = () => {
@@ -21,7 +22,9 @@ const Aboutsection = () => {
             <img src={image3} alt="" />
             <img src={image4} alt="" />
         </div>
+
         <div className="right-r">
+
             <span>About Trail Ahead</span>
 
             <div>
