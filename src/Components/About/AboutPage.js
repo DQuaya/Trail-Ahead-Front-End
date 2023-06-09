@@ -17,20 +17,22 @@ function AboutPage() {
     
       <div className="container">
         <div className="imgBack"></div>
-        <div className="mission-box">
           <h1>Mission</h1>
+        <div className="mission-box">
           <p>At Trail Ahead our goal is to foster healthy connections, 
              new friendships, and shared memories through nature and
              outdoor adventures
           </p>
-
+          </div>
           <h1>Benefits of Joining</h1>
-          <p>When you join, you will have the opportunity to build friendships.
-            Friendships have a huge impact on your mental health and happiness. 
-            Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. 
-            Developing close friendships can also have a powerful impact on your physical health.
-            Along with that Hiking itself have a tone of health benefits. ,</p>
-        </div>
+          <div className="benefits-box">
+            <p>When you join, you will have the opportunity to build friendships.
+              Friendships have a huge impact on your mental health and happiness. 
+              Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. 
+              Developing close friendships can also have a powerful impact on your physical health.
+              Along with that Hiking itself have a tone of health benefits. ,
+            </p>
+          </div>
 
         <div className="text-containers">
 

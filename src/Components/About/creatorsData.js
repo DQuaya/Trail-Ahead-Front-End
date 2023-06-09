@@ -1,6 +1,7 @@
-import image1 from './IMG_4051.jpeg'
-// import image2 from './Screenshot 2023-06-08 at 8.04.15 PM.png'
-// import image3 from './Screenshot 2023-06-08 at 8.04.30 PM.png'
+import image1 from './image1.png'
+import image2 from './image2.png'
+import image3 from './image3.png'
+import image4 from './image4.png'
 
 export const creatorsData = [
     {
@@ -11,24 +12,24 @@ export const creatorsData = [
         status: 'Full-Stack Developer'
     },
     {
-        image: image1,
+        image: image2,
         story: 
         "You're A stupid hoe",
-        name: 'DonQuaya Brown',
+        name: 'Thanuseng Kevin Prachith',
         status: 'Full-Stack Developer'
     },
     {
-        image: image1,
+        image: image3,
         story: 
         "Moment for life",
-        name: 'DonQuaya Brown',
+        name: 'Aaliyah Russell',
         status: 'Full-Stack Developer'
     },
     {
-        image: image1,
+        image: image4,
         story: 
         "Comma",
-        name: 'DonQuaya Brown',
+        name: 'Gerald Pinkins',
         status: 'Full-Stack Developer'
     }
 ];
