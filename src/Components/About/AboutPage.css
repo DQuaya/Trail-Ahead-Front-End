@@ -155,3 +155,41 @@ p {
     .imageBoxes {
     }
 }
+
+
+
+/* Making the creator section responsive */
+
+@media screen and (max-width: 768px){
+    .creators{
+        flex-direction: column;
+    }
+    .left-c>:nth-child(2){
+        font-size: xx-large;
+    }
+    .left-c>:nth-child(3){
+        font-size: xx-large;
+    }
+    .right-c{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-c>div{
+        position: relative;
+        display: none;
+    }
+    .right-c>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .right-c>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+}
