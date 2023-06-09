@@ -1,65 +1,167 @@
 body {
-    background-color: #3b6942;
+    background-color: #00643c;
     color: #e35609;
 }
 /* #718d5a; */
 
+/* Gerald coding starts */
 .imgBack {
 
-    background-image: url("/src/Components/About/8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
+    background-image: url("./8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 90vh;
     width: 1550px;
     margin-bottom: 100px;
+    margin: 0;
     margin-left: -100px;
+    margin-top: -50px;
     border-radius: 4px;
-    /* background-position:center ;
 
-}
-
-.imgContainer img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.mission-box {
-    font-size: larger;
 }
 
 .mission-box,
 p {
     font-size: 25px;
 }
+/* Gerald coding stopped */
 
-.impactBox {
-    /* background-color: #f8fff2; */
-    color: #e35609;
-    font-size: 25px;
-}
+/* Quaya Coding starts */
 
-.impactHeader {
-    text-align: center;
-}
-
-.section-container {
+h1{
+    border: 2px solid #e35609;
+    color: white;
+    margin-top: 100px;
+    width: 400px;
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #e35609;
+    
+    
 }
 
-.imageBoxes {
+.creators{
     display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 300px;
-    justify-content: space-between;
-    margin-left: 100px;
-    padding: 10px;
-    /* margin-top: 50px; */
+    gap: 1rem;
+    padding: 0 2rem;
+    margin-top: 10px;
 }
 
+.left-c{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: rgb(248, 247, 246);
+}
+
+.left-c>:nth-child(1){
+    color: rgb(248, 247, 247);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.left-c>:nth-child(2){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-c>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-c>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.right-c{
+    flex: 1;
+    position: relative;
+}
+
+.right-c>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right-c>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid #e35609;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.right-c>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: linear-gradient(orange,limegreen);
+}
+
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.mission-box {
+    font-size: larger;
+    border: 2px solid #e35609;
+    color: #fcfbfa;
+    margin-top: 10px;
+    /* background: white; */
+    width: 900px; 
+    display: flex;
+  
+    
+
+}
+.benefits-box{
+    border: 2px solid #e35609;
+    color: #f7f5f5;
+    /* background: white; */
+    margin-top: 10px;
+    width: 900px; 
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* end of quaya coding */
+
+
+
+/* Gerald responsive section starts */
 @media only screen and (max-width: 475px) and (orientation: portrait) {
     .imgBack {
         background-size: contain; /* Adjust background-size property */
@@ -70,3 +172,45 @@ p {
     .imageBoxes {
     }
 }
+
+/* Gerald responsive section ends */
+
+
+/* Quaya Making section responsive */
+
+@media screen and (max-width: 768px){
+    .creators{
+        flex-direction: column;
+    }
+    .left-c>:nth-child(2){
+        font-size: xx-large;
+    }
+    .left-c>:nth-child(3){
+        font-size: xx-large;
+    }
+    .right-c{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-c>div{
+        position: relative;
+        display: none;
+    }
+    .right-c>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .right-c>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+   
+}
+
+/* Quaya responsive section ends */

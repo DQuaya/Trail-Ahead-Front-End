@@ -88,8 +88,9 @@
 }
 
 .brands>img{
-    width: 9.5rem;
+    width: 8.5rem;
 }
+
 
 
 /* making this section responsive  */
@@ -97,6 +98,7 @@
 @media screen and (max-width: 768px){
     .Reasons{
         flex-direction: column;
+        margin-top: -300px;
     }
     .left-r{
         grid-auto-rows: auto;
@@ -117,4 +119,6 @@
         width: 7rem;
         height: 6rem;
     }
+   
 }
+

@@ -1,11 +1,32 @@
-.sub-bttn {
-    background-color: #CB5B00;
-    color: white;
-    padding: 12px 20px;
-    width: 65%;
-    height: 80%;
+.Footer-container{
+    position: relative;
 }
 
-.footer-bttm {
-    /* position: relative; */
+.Footer-container > hr{
+    border: 1px solid orange;
+}
+
+.footer{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.social-links{
+    display: flex;
+    gap: 4rem;
+}
+
+.social-link > img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo-f>img{
+    width: 10rem;
 }
