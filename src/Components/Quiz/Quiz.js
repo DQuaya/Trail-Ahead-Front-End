@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import '../Quiz/Quiz.css'
 
 function QuizForm() {
   const [question, setQuestion] = useState('');
@@ -25,7 +26,33 @@ function QuizForm() {
  };
 
   return (
-    <div>
+    <div className="quizContainer">
+      <form onSubmit={handleSubmit}>
+        <label>
+          Question:
+          <input type="text" value={question} onChange={handleQuestionChange} />
+        </label>
+        <br />
+        <label>
+          Answer:
+          <input type="text" value={answer} onChange={handleAnswerChange} />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Question:
+          <input type="text" value={question} onChange={handleQuestionChange} />
+        </label>
+        <br />
+        <label>
+          Answer:
+          <input type="text" value={answer} onChange={handleAnswerChange} />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
       <form onSubmit={handleSubmit}>
         <label>
           Question:

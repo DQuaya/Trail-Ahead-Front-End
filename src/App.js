@@ -57,7 +57,10 @@ function App() {
           </Routes>
         </>
       )}
-      
+      <br />
+     <div>
+        <QuizForm />
+        </div> 
     </div>
   );
 }
