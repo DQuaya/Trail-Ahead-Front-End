@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 import { creatorsData } from "./creatorsData";
 import left from './left.png'
 import right from './right.png'
-import { Color } from "three";
+// import { Color } from "three";
 
 // Quaya coded this
 
