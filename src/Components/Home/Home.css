@@ -9,4 +9,11 @@
     padding-top: 1.5rem;
 }
 
+/* Attempting to make home responsive */
 
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+        
+    }
+}

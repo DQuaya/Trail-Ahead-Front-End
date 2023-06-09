@@ -43,9 +43,16 @@ function AboutPage() {
             <span className="stroke-text">Creators</span>
             <span>Who they are</span>
             <span>What are their stories </span>
-            <span>
+            <motion.span
+            key={selected}
+            initial={{opacity: 0, x: 100}}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={transition}
+            
+            >
               {creatorsData[selected].story}
-            </span>
+            </motion.span>
             <span>
               <span style={{color:'red'}}>
                 {creatorsData[selected].name}
@@ -60,8 +67,14 @@ function AboutPage() {
             whileInView={{ opacity: 1, x:0}}></motion.div>
             <motion.div initial={{ opacity:0, x: 100}}
             transition={{ ...transition, duration: 2}}
-            whileInView={{ opacity: 0, x:0}}></motion.div>
-            <img src={creatorsData[selected].image} alt="" />
+            whileInView={{ opacity: 1, x:0}}></motion.div>
+            <motion.img 
+            key={selected}
+            initial={{opacity: 0, x: 100}}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={transition}
+            src={creatorsData[selected].image} alt="" />
 
             <div className="arrows">
               <img 
