@@ -4,6 +4,7 @@ body {
 }
 /* #718d5a; */
 
+
 .imgBack {
 
     background-image: url("./8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
@@ -13,6 +14,7 @@ body {
     height: 90vh;
     width: 1550px;
     margin-bottom: 100px;
+    margin: 0;
     margin-left: -100px;
     margin-top: -50px;
     border-radius: 4px;
@@ -24,12 +26,7 @@ body {
     width: 100%;
     height: auto;
 }
-.mission-box {
-    font-size: larger;
-    border: 5px solid rgb(255, 158, 3);
-    background: white;
-   
-}
+
 
 .mission-box,
 p {
@@ -65,6 +62,19 @@ p {
 
 /* Quaya Coding the Creator section */
 
+h1{
+    border: 2px solid #e35609;
+    color: white;
+    margin-top: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e35609;
+    
+    
+}
+
 .creators{
     display: flex;
     gap: 1rem;
@@ -77,12 +87,13 @@ p {
     gap: 2rem;
     flex-direction: column;
     text-transform: uppercase;
-    color: yellow;
+    color: rgb(248, 247, 246);
 }
 
 .left-c>:nth-child(1){
-    color: aqua;
+    color: rgb(248, 247, 247);
     font-weight: bold;
+    margin-top: 20px;
 }
 .left-c>:nth-child(2){
     font-weight: bold;
@@ -116,7 +127,7 @@ p {
     position: absolute;
     width: 17rem;
     height: 20rem;
-    border: 2px solid orange;
+    border: 2px solid #e35609;
     background-color: transparent;
     right: 9rem;
     top: 0.9rem;
@@ -143,6 +154,34 @@ p {
     cursor: pointer;
 }
 
+.mission-box {
+    font-size: larger;
+    border: 2px solid #e35609;
+    color: #e35609;
+    margin-top: 10px;
+    background: white;
+    width: 900px; 
+    display: flex;
+    
+
+}
+.benefits-box{
+    border: 2px solid #e35609;
+    color: #e35609;
+    background: white;
+    margin-top: 10px;
+    width: 900px; 
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+}
 /* end of quaya coding */
 
 @media only screen and (max-width: 475px) and (orientation: portrait) {
@@ -192,4 +231,5 @@ p {
         bottom: 0;
         left: 0;
     }
+   
 }

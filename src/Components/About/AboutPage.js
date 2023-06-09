@@ -19,22 +19,29 @@ function AboutPage() {
     
       <div className="container">
         <div className="imgBack"></div>
-          <h1>Mission</h1>
+        <h2>About Us</h2>
+          <div className="h1">
+            <h1>Mission</h1>
+          </div>
         <div className="mission-box">
           <p>At Trail Ahead our goal is to foster healthy connections, 
              new friendships, and shared memories through nature and
-             outdoor adventures
+             outdoor adventures.  Our creators wanted to develop a place where people
+             with a variety levels of hiking experience can come, and enjoy the outdoors
+             with anyone who shares that same love for exploring nature.
           </p>
+        </div>
+          <div className="h1">
+            <h1>Benefits of Joining</h1>
           </div>
-          <h1>Benefits of Joining</h1>
-          <div className="benefits-box">
+        <div className="benefits-box">
             <p>When you join, you will have the opportunity to build friendships.
               Friendships have a huge impact on your mental health and happiness. 
               Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. 
               Developing close friendships can also have a powerful impact on your physical health.
               Along with that Hiking itself have a tone of health benefits. ,
             </p>
-          </div>
+        </div>
 
         <div className="text-containers">
 
@@ -54,7 +61,7 @@ function AboutPage() {
               {creatorsData[selected].story}
             </motion.span>
             <span>
-              <span style={{color:'red'}}>
+              <span style={{color:'orange'}}>
                 {creatorsData[selected].name}
               </span>{""}
               -{creatorsData[selected].status}
