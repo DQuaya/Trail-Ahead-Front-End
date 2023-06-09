@@ -1,5 +1,5 @@
 import "./Signup.css";
-import Login from "../Home/Login/Login";
+import Login from "../Login/Login";
 
 const Signup = () => {
     

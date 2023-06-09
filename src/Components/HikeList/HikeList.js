@@ -41,7 +41,6 @@ const HikeList = () => {
 
     return (
         <div className="hikeListMain">
-            <img src={coverImage} alt="" />
             <h1>Available Hikes</h1>
             {hikes.map((hike) => (
                 <PlannedHike
