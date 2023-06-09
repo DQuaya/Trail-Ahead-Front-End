@@ -1,13 +1,48 @@
+import { useState } from "react";
 import "./AboutPage.css";
 // import img1 from "../About/img1.png";
 // import img2 from "../About/img2.png";
 // import img3 from "../About/img3.png";
 // import img4 from "../About/img4.png";
 
+import { creatorsData } from "./creatorsData";
+import left from './left.png'
+import right from './right.png'
+import { Color } from "three";
+
 function AboutPage() {
+  const [selected, setSelected] = useState(0);
+  const cLength = creatorsData.length
   return (
     <div className="text-containers">
-      <div className="imgBack"></div>
+
+      <div className="creators">
+        <div className="left-c">
+          <span className="stroke-text">Creators</span>
+          <span>Who they are</span>
+          <span>What are their stories </span>
+          <span>
+            {creatorsData[selected].story}
+          </span>
+          <span>
+            <span style={{color:'red'}}>
+              {creatorsData[selected].name}
+            </span>{""}
+            -{creatorsData[selected].status}
+          </span>
+        </div>
+        <div className="right-c">
+          <div></div>
+          <div></div>
+          <img src={creatorsData[selected].image} alt="" />
+
+          <div className="arrows">
+            <img src={left} alt="" />
+            <img src={right} alt="" />
+          </div>
+        </div>
+      </div>
+      {/* <div className="imgBack"></div>
 
         <h1> Mission </h1>
       <div className="mission-box">
@@ -32,8 +67,11 @@ function AboutPage() {
           your download goes to one of our non-profit partners.{" "}
         </p>
       </div>
+      <div className="creators">
+
+      </div>
       <br />
-      <br />
+      <br /> */}
 
       {/* <div className="imageBoxes">
         <img src={img1} alt="" />

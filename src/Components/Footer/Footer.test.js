@@ -11,15 +11,18 @@ describe("The Footer Component", () => {
         const tikValue = screen.getByAltText('tiktok');
         const twitValue = screen.getByAltText('twitter');
         const instaValue = screen.getByAltText('instagram');
-        
+        const logoValue = screen.getByAltText('logoimg')
        
 
         expect(faceValue).toBeInTheDocument();
         expect(tikValue).toBeInTheDocument();
         expect(twitValue).toBeInTheDocument()
         expect(instaValue).toBeInTheDocument();
+        expect (logoValue).toBeInTheDocument();
         
     })
+    
+    
 })
 
 // Tested by Quaya

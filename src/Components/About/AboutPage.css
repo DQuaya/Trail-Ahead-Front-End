@@ -63,6 +63,61 @@ p {
     /* margin-top: 50px; */
 }
 
+/* Creator section */
+
+.creators{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.left-c{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.left-c>:nth-child(1){
+    color: aqua;
+    font-weight: bold;
+}
+.left-c>:nth-child(2){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-c>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-c>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.right-c{
+    flex: 1;
+    position: relative;
+}
+
+.right-c>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right-c>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+}
+
 @media only screen and (max-width: 475px) and (orientation: portrait) {
     .imgBack {
         background-size: contain; /* Adjust background-size property */
