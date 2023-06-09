@@ -29,7 +29,7 @@ p {
 
 /* Quaya Coding starts */
 
-h1{
+.about-h1{
     border: 2px solid #e35609;
     color: white;
     margin-top: 100px;
@@ -37,7 +37,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e35609;
+    /* background: #e35609; */
     
     
 }

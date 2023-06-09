@@ -23,7 +23,7 @@ function AboutPage() {
     <div className="container">
         <div className="imgBack"></div>
           <h2>About Us</h2>
-        <div className="h1">
+        <div className="about-h1">
           <h1>Mission</h1>
         </div>
 
@@ -37,7 +37,7 @@ function AboutPage() {
         </p>
     </div>
 
-      <div className="h1">
+      <div className="about-h1">
           <h1>Benefits of Joining</h1>
       </div>
 
