@@ -63,7 +63,7 @@ p {
     /* margin-top: 50px; */
 }
 
-/* Creator section */
+/* Quaya Coding the Creator section */
 
 .creators{
     display: flex;
@@ -116,7 +116,34 @@ p {
     position: absolute;
     width: 17rem;
     height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
 }
+.right-c>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: linear-gradient(orange,limegreen);
+}
+
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* end of quaya coding */
 
 @media only screen and (max-width: 475px) and (orientation: portrait) {
     .imgBack {

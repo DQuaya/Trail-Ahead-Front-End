@@ -13,21 +13,21 @@ export const creatorsData = [
     {
         image: image1,
         story: 
-        "I like green eggs and ham",
+        "You're A stupid hoe",
         name: 'DonQuaya Brown',
         status: 'Full-Stack Developer'
     },
     {
         image: image1,
         story: 
-        "I like green eggs and ham",
+        "Moment for life",
         name: 'DonQuaya Brown',
         status: 'Full-Stack Developer'
     },
     {
         image: image1,
         story: 
-        "I like green eggs and ham",
+        "Comma",
         name: 'DonQuaya Brown',
         status: 'Full-Stack Developer'
     }
