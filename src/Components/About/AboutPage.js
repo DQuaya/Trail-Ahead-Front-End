@@ -11,29 +11,36 @@ import left from './left.png'
 import right from './right.png'
 import { Color } from "three";
 
+// Quaya coded this
+
+
 function AboutPage() {
   const transition = {type: "spring", duration: 3}
   const [selected, setSelected] = useState(0);
   const cLength = creatorsData.length
   return (
     
-      <div className="container">
+    <div className="container">
         <div className="imgBack"></div>
-        <h2>About Us</h2>
-          <div className="h1">
-            <h1>Mission</h1>
-          </div>
-        <div className="mission-box">
-          <p>At Trail Ahead our goal is to foster healthy connections, 
-             new friendships, and shared memories through nature and
-             outdoor adventures.  Our creators wanted to develop a place where people
-             with a variety levels of hiking experience can come, and enjoy the outdoors
-             with anyone who shares that same love for exploring nature.
-          </p>
+          <h2>About Us</h2>
+        <div className="h1">
+          <h1>Mission</h1>
         </div>
-          <div className="h1">
-            <h1>Benefits of Joining</h1>
-          </div>
+
+    <div className="mission-box">
+        <p>
+          At Trail Ahead our goal is to foster healthy connections, 
+          new friendships, and shared memories through nature and
+          outdoor adventures.  Our creators wanted to develop a place where people
+          with a variety levels of hiking experience can come, and enjoy the outdoors
+          with anyone who shares that same love for exploring nature.
+        </p>
+    </div>
+
+      <div className="h1">
+          <h1>Benefits of Joining</h1>
+      </div>
+
         <div className="benefits-box">
             <p>When you join, you will have the opportunity to build friendships.
               Friendships have a huge impact on your mental health and happiness. 
@@ -107,4 +114,7 @@ function AboutPage() {
   );
 }
 
+
+
+// Quaya coded this
  export default AboutPage;
