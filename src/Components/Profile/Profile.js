@@ -21,9 +21,9 @@ const Profile = () => {
                     <p>quaya@gmail.com</p>
 
                     <ul className='about'>
-                        <li><span>4,073</span>FollowersHikes</li>
-                        <li><span>322</span>Following</li>
-                        <li><span>200</span>Good Re iews</li>
+                        <li><span>473</span>Hikes</li>
+                        <li><span>322</span>Group hikes</li>
+                        <li><span>200</span>Review</li>
                     </ul>
                     
                     <div className='content'>

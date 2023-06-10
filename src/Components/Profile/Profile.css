@@ -55,13 +55,13 @@ a{
 
 .header__wrapper .cols__container .left__col .img__container span{
 	position: absolute;
-	background: yellow;
+	background: rgb(255, 128, 0);
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
 	bottom: 3px;
 	right: 11px;
-	border: 2px solid purple;
+	border: 2px solid rgb(255, 253, 255);
 }
 
 .header__wrapper .cols__container .left__col h2{
@@ -73,7 +73,7 @@ a{
 
 .header__wrapper .cols__container .left__col p{
 	font-size: 0.9rem;
-	color: blue;
+	color: rgb(252, 252, 254);
 	margin: 0;
 }
 
@@ -86,12 +86,12 @@ a{
 .header__wrapper .cols__container .left__col .about li{
 	display: flex;
 	flex-direction: column;
-	color: aqua;
+	color: rgb(255, 94, 0);
 	font-size: 0.9rem;
 }
 
 .header__wrapper .cols__container .left__col .about li span{
-	color: aquamarine;
+	color: rgb(249, 251, 250);
 	font-weight: 600;
 }
 
@@ -100,14 +100,14 @@ a{
 	content: "";
 	bottom: -16px;
 	display: block;
-	background: rgb(246, 204, 204);
+	background: rgb(252, 140, 3);
 	height: 1px;
 	width: 100%;
 }
 
 .header__wrapper .cols__container .content p{
 	font-size: 1rem;
-	color: red;
+	color: rgb(251, 251, 251);
 	line-height: 1.8em;
 }
 
@@ -138,12 +138,12 @@ a{
 
 .header__wrapper .cols__container .right__col div ul li a{
 	text-transform: uppercase;
-	color: lightcoral;
+	color: rgb(251, 118, 2);
 }
 
 .header__wrapper .cols__container .right__col div button{
-	background: pink;
-	color: hotpink;
+	background: rgb(249, 117, 2);
+	color: rgb(252, 250, 251);
 	border: none;
 	padding: 10px 25px;
 	border-radius: 4px;
@@ -152,7 +152,7 @@ a{
 }
 
 .header__wrapper .cols__container .right__col div ul li:nth-child(1) a{
-	color: sandybrown;
+	color: rgb(19, 202, 9);
 	font-weight: 600;
 }
 
