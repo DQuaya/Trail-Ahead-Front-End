@@ -162,16 +162,7 @@ h2{
 
 
 /* Gerald responsive section starts */
-@media only screen and (max-width: 475px) and (orientation: portrait) {
-    .imgBack {
-        background-size: contain; /* Adjust background-size property */
-        width: 100vw; /* Set the width to 100% viewport width */
-        height: 100vh; /* Set the height to 100% viewport height */
-        margin: 0; /* Remove the margins */
-    }
-    .imageBoxes {
-    }
-}
+
 
 /* Gerald responsive section ends */
 
@@ -179,6 +170,17 @@ h2{
 /* Quaya Making section responsive */
 
 @media screen and (max-width: 768px){
+    /* .imgBack{
+        background-image: url('./mobile.jpg');
+        background-position: center;
+    } */
+    .mission-box{
+        flex-direction: column;
+    }
+
+    .benefits-box{
+        flex-direction: column;
+    }
     .creators{
         flex-direction: column;
     }

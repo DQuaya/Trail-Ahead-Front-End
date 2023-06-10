@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
+
+// import coverImage from "../../assets/mountains.jpg";
+
 import { redirect } from "react-router-dom";
+
 import PlannedHike from "./PlannedHike";
 import "./HikeList.css";
 

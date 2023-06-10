@@ -95,7 +95,7 @@ nav .menu-btn,
 }
 .header-heading span{
     font-family: 'Alfa Slab One';
-    color: #915200;
+    color: #f85700;
     border-bottom: 2px solid #c26800;
 }
 .header-heading .details{
@@ -139,9 +139,6 @@ nav .menu-btn,
     color: #0ca216;
     border: 2px solid #22bf34;
 }
-
-
-
 
 .a-container{
     display: flex;
@@ -257,6 +254,12 @@ nav .menu-btn,
 .about-image img{
   width: 600px;
 }
+
+/* .menu{
+    background: white;
+    opacity: 0.5;
+    border: 3px solid orange;
+} */
 
 
 @media(max-width:620px){
