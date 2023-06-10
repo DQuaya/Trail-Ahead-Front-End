@@ -1,14 +1,74 @@
-.main{
-
-    display: flex;
-    justify-content: space-between;
+#main{
+    width:100%;
+    height:868px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-image: url('./hero.GIF');
 }
 
-/* .left{
-    padding: 2rem;
-    padding-top: 1.5rem;
-} */
+.header-heading{
+	font-family: 'Montserrat';
+	width: 900px;
+	position: absolute;
+    left: 25%;
+    top: 55%;
+    text-align: left;
+	transform: translate(-25%,-55%);
+}
+.header-heading span{
+    font-family: 'Alfa Slab One';
+    color: #f85700;
+    border-bottom: 2px solid #c26800;
+}
+.header-heading .details{
+    font-size: 23px;
+    color: #fcfafa;
+}
+.header-heading h3{
+	font-family:'Bebas Neue';
+	font-size: 1.6rem;
+	margin:0px;
+	letter-spacing: 2px;
+	color:#fbfafa;
+}
+.header-heading h1{
+	font-family:'Alfa Slab One';
+	font-size: 4rem;
+	margin:0px;
+	letter-spacing: 2px;
+	color:#fcfcfb;
+}
+.header-btns{
+    display: flex;
+    margin-top: 40px;
+}
+.header-btn{
+	width:160px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family:'Lato';
+    background-color: #cb5b00;
+    box-shadow: 5px 10px 30px rgba(27, 241, 84, 0.336);
+    border-radius: 5px;
+	color:#ffffff;
+}
+.header-btn:hover{
+	background-color: transparent;
+    transition: all ease 0.5s;
+    color: #0ca216;
+    border: 2px solid #22bf34;
+}
 
+span{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(245, 127, 1);
+    /* font-size: xx-large; */
+}
 /* Attempting to make home responsive */
 
 @media screen and (max-width: 768px){

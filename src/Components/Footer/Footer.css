@@ -1,32 +1,108 @@
-.Footer-container{
-    position: relative;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+/* styling the footer */
+
+footer{
+    background: #017748;
 }
 
-.Footer-container > hr{
-    border: 1px solid orange;
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+    margin-top: auto;
 }
 
-.footer{
-    padding: 1rem 2rem;
+
+/* stylig the social media icons */
+
+.socialIcons{
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    align-items: center;
     justify-content: center;
-    height: 20rem;
 }
 
-.social-links{
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #00643c;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #ff6817;
+    opacity: 0.9;
+}
+
+/* adding a hover effect for the icons */
+.socialIcons a:hover{
+    background-color: #ff6817;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: rgb(2, 134, 20);
+    transition: 0.5s;
+}
+
+
+/* styling the footer navigation link */
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
     display: flex;
-    gap: 4rem;
+    justify-content: center;
 }
 
-.social-link > img{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
+.footerNav ul li a{
+    color: #ff6817;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
-.logo-f>img{
-    width: 10rem;
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+
+/* styling the copyright section of the footer */
+
+.footerBottom{
+    background-color: #00643c;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: #ff6817;
+}
+
+
+.designerName{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    
+}
+
+/* making the footer responsive */
+
+@media (max-width: 700px){
+    .footerNav{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
