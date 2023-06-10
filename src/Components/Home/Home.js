@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import './Home.css'
 import Aboutsection from "../Aboutsection/Aboutsection";
 
+
+// Coded by Quaya
 const Home = () => {
 
   return (

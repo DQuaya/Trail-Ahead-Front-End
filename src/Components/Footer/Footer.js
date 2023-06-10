@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
-
+// Coded by Quaya
 const Footer = () => {
   return (
     <footer>
@@ -33,3 +33,5 @@ const Footer = () => {
 }
 
 export default Footer
+
+// Coded by Quaya

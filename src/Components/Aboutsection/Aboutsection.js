@@ -11,6 +11,7 @@ import image4 from "../../assets/image4.jpg"
 import tick from "../../assets/tick.png"
 import {Link} from 'react-router-dom'
 
+// Coded by Quaya
 // import { Color, ColorKeyframeTrack } from 'three'
 
 const Aboutsection = () => {
@@ -76,3 +77,4 @@ const Aboutsection = () => {
 
 export default Aboutsection
 
+// Coded by Quaya
