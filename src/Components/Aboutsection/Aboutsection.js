@@ -25,7 +25,7 @@ const Aboutsection = () => {
 
         <div className="right-r">
 
-            <span>About Trail Ahead</span>
+            
 
             <div>
                 <span className='stroke-text'>why</span>
