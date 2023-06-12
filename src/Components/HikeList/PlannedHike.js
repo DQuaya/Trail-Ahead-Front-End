@@ -1,5 +1,6 @@
 import "./PlannedHike.css";
 import { Link } from "react-router-dom"
+import Hikedetails from "../Hikedetails/Hikedetails";
 
 const PlannedHike = ({
     name,
@@ -37,6 +38,7 @@ const PlannedHike = ({
             </div>
             <div>
                 <Link to={ (hikeId !== undefined) ? `/hike/${hikeId}` : `/hike` }>
+                    <Hikedetails />
                     View Hike
                 </Link>
             </div>

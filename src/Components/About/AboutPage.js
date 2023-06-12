@@ -7,7 +7,7 @@ import about2 from './about2.jpg'
 import { creatorsData } from "./creatorsData";
 import left from './left.png'
 import right from './right.png'
-// import { Color } from "three";
+
 
 // Quaya coded this
 
