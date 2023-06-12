@@ -89,7 +89,9 @@ body {
 }
 
 
-
+.purpose{
+    color: white;
+}
 
 
 /* creator section */
@@ -237,6 +239,7 @@ h2{
 @media screen and (max-width: 768px){
     .mission-box{
         flex-direction: column;
+        font-size: medium;
     }
 
     .benefits-box{
@@ -274,7 +277,11 @@ h2{
         left: 0;
     }
     .creators{
-        margin-top: 250px;
+        margin-top: 650px;
+    }
+
+    .about-row{
+        margin-top: 700px;
     }
    
 }
@@ -289,6 +296,7 @@ h2{
     }
     .right-column{
         flex-basis: 100%;
+        font-size: medium;
     }
 }
 /* Ended of about section */
