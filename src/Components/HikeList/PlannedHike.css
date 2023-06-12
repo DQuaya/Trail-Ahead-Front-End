@@ -1,17 +1,29 @@
 .plannedHikeContainer {
+    background-color: brown;
+    padding:10px
+}
+.hikePlannerContainer {
     display: flex;
     gap: 10px;
     padding: 1rem;
     background-color: white;
     width: 600px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.plannedHikeContainer > div {
+.hikePlannerContainer > div {
     display: flex;
     flex-direction: column;
 }
 
 button {
     padding: 12px 16px;
+}
+
+h3 {
+    
+}
+
+span {
+    color:green
 }
