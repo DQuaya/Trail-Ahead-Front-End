@@ -1,0 +1,18 @@
+
+
+
+.quizContainer {
+  
+ width: 50%;
+ align-self: center;
+  /* margin: 0 auto; */
+}
+
+
+input#question {
+  width: 200%;
+}
+
+input#answer {
+  width: 200%;
+}

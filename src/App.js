@@ -13,6 +13,7 @@ import Hikedetails from "./Components/Hikedetails/Hikedetails";
 
 import Profile from "./Components/Profile/Profile";
 import Footer from "./Components/Footer/Footer";
+import Quiz from "./Components/Quiz/Quiz";
 
 
 
@@ -56,7 +57,7 @@ function App() {
                         <Route path="hike/:id" element={<Hikedetails />} />
                         <Route path="profile" element={<Profile />} />
                     </Routes>
-                    
+                    <Quiz />
                     <Footer />
                 </>
             )}
