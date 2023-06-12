@@ -1,0 +1,14 @@
+.title-cntnr {
+    display: flex;
+    justify-content: center;
+}
+
+.article-head {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,5 +1,7 @@
 import "./PlannedHike.css";
+
 import { Link } from "react-router-dom";
+
 
 const PlannedHike = ({
     hikePlannerName,
@@ -13,6 +15,7 @@ const PlannedHike = ({
 }) => {
     return (
         <div className="plannedHikeContainer">
+
             <h2>
                 {trailName} Hike on {timeDate}
             </h2>
@@ -47,6 +50,7 @@ const PlannedHike = ({
                         <span className="">View Hike</span>
                     </Link>
                 </div>
+
             </div>
         </div>
     );

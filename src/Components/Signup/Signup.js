@@ -1,5 +1,7 @@
 import "./Signup.css";
 import Login from "../Login/Login";
+import ProgressBar from "../ProgressBar/ProgressBar";
+import Optional from "../OptionalSignUp/Optional";
 
 const Signup = () => {
     
@@ -81,6 +83,7 @@ const Signup = () => {
             </form>
             <span>
                 Already have an account? <a href="/login">Sign in</a>
+                <Optional />
             </span>
         </div>
     );
