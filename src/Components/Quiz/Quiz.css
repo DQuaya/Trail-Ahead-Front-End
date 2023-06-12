@@ -33,3 +33,17 @@ form {
 button[type="submit"] {
   margin-top: 10px;
 }
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    width: 70%;
+  }
+}
