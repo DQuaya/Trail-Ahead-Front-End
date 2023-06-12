@@ -5,7 +5,7 @@ body {
 /* #718d5a; */
 
 /* Gerald coding starts */
-.imgBack {
+/* .imgBack {
 
     background-image: url("./8-ways-to-make-your-travel-more-sustainable-1800x800.jpeg");
     background-size: cover;
@@ -19,13 +19,13 @@ body {
     margin-top: -50px;
     border-radius: 4px;
 
-}
+} */
 
 /* Gerald coding stopped */
 
+
+
 /* Quaya Coding starts */
-
-
 /* about section */
 
 #about{
@@ -89,21 +89,10 @@ body {
 }
 
 
-
-/* making it responsive */
-
-@media only screen and (max-width:768px) {
-    .left-column{
-        flex-basis: 100%;
-    }
-    .left-column img{
-        width: 100%;
-    }
-    .right-column{
-        flex-basis: 100%;
-    }
+.purpose{
+    color: white;
 }
-/* Ended of about section */
+
 
 /* creator section */
 
@@ -248,12 +237,9 @@ h2{
 /* Quaya Making section responsive */
 
 @media screen and (max-width: 768px){
-    /* .imgBack{
-        background-image: url('./mobile.jpg');
-        background-position: center;
-    } */
     .mission-box{
         flex-direction: column;
+        font-size: medium;
     }
 
     .benefits-box{
@@ -290,7 +276,28 @@ h2{
         bottom: 0;
         left: 0;
     }
+    .creators{
+        margin-top: 650px;
+    }
+
+    .about-row{
+        margin-top: 700px;
+    }
    
 }
 
+
+@media only screen and (max-width:768px) {
+    .left-column{
+        flex-basis: 100%;
+    }
+    .left-column img{
+        width: 100%;
+    }
+    .right-column{
+        flex-basis: 100%;
+        font-size: medium;
+    }
+}
+/* Ended of about section */
 /* Quaya responsive section ends */

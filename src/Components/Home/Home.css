@@ -7,9 +7,10 @@
      background-image: url('./hero.GIF');
 }
 
+
 .header-heading{
 	font-family: 'Montserrat';
-	width: 900px;
+	width: 400px;
 	position: absolute;
     left: 25%;
     top: 55%;
@@ -69,14 +70,83 @@ span{
     color: rgb(245, 127, 1);
     /* font-size: xx-large; */
 }
+
+
+
 /* Attempting to make home responsive */
 
 @media screen and (max-width: 768px){
-    main{
+
+    #main{
+		background-image: url('./mobile2.jpg');
         flex-direction: column;
-        
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+	}
+
+    .header-heading h3{
+        font-size:large;
+        margin-left: 30px;
     }
+
+    .header-heading h1{
+        font-size: xx-large;
+        margin-left: 100px;
+    }
+
+    .header-heading p {
+        margin-left: 100px;
+        color: white;
+    }
+
+    .header-btns{
+        margin-left: 100px;
+    }
+    /* .header-heading{
+		left: 50%;
+		top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-heading h2{
+        font-size: 1.5rem;
+    }
+
+    .header-heading h1{
+        font-size: 3rem;
+    } */
+    /* .header-heading h3{
+        color: red;
+        font-size: 2rem;
+        
+    } */
+
+    /* #attempt{
+        color: red;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .header-heading .details{
+        font-size: 1rem;
+    } 
+    
+    .home-main{
+        flex-direction: column;
+    }
+
+    #main:nth-child(1){
+        color: red;
+    } */
 }
 
 
 /* Stlyed by Quaya */
+
+
+
+
