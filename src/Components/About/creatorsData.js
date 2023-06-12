@@ -28,7 +28,7 @@ export const creatorsData = [
     {
         image: image4,
         story: 
-        "I wanted a change and more of a challenge while being an influence within my community for those who look like me to pursue a career in tech.",
+        "I wanted a change and more of a challenge while being an influence others to pursue a career in tech.",
         name: 'Gerald Pinkins',
         status: 'Full-Stack Developer'
     }
