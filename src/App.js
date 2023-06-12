@@ -7,13 +7,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import AboutPage from "./Components/About/AboutPage";
 import Signup from "./Components/Signup/Signup";
-import Login from "./Components/Home/Login/Login";
-<<<<<<< HEAD
+import Login from "./Components/Login/Login";
 import Hikedetails from "./Components/Hikedetails/Hikedetails";
-import Hikes from "./Components/Hikes/Hikes";
-=======
-import HikeList from "./Components/HikeList/HikeList";
->>>>>>> hikelist-page
+ import HikeList from "./Components/HikeList/HikeList"; 
 import Profile from "./Components/Profile/Profile";
 // import Footer from "./Components/Footer/Footer";
 import Aboutsection from "./Components/Aboutsection/Aboutsection";
@@ -53,14 +49,9 @@ function App() {
                         <Route path="about" element={<AboutPage />} />
                         <Route path="signup" element={<Signup />} />
                         <Route path="login" element={<Login />} />
-<<<<<<< HEAD
-                        <Route path='hikedetails' element={<Hikedetails/>}/>
-                        <Route path="hike" element={<Hikes />} />
-=======
                         {/* <Route path='hikes' element={<Hikes/>}/>
                     <Route path='profile' element={<Contact/>}/> */}
                         <Route path="hike" element={<HikeList />} />
->>>>>>> hikelist-page
                         <Route path="profile" element={<Profile />} />
                     </Routes>
                     
