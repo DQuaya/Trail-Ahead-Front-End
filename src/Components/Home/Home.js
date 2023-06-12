@@ -24,7 +24,7 @@ const Home = () => {
         
     </div>
 
-    <h1>About Trail Ahead</h1>
+    <h1 className="about-trail">About Trail Ahead</h1>
       <Aboutsection/>
     </div>
     

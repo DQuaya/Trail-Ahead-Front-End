@@ -80,3 +80,34 @@ span{
 
 
 /* Stlyed by Quaya */
+
+
+/* trying the css */
+
+@media(max-width:1190px){
+	#main{
+		background-size: 1150px !important;
+		background-image: url('./mobile2.jpg');
+	}
+	.header-heading{
+		left: 50%;
+		top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .header-heading h2{
+        font-size: 1.5rem;
+    }
+    .header-heading h1{
+        font-size: 3rem;
+    }
+    /* .header-heading h3{
+        justify-content: center;
+    } */
+    .header-heading .details{
+        font-size: 1rem;
+    } 
+    
+}
