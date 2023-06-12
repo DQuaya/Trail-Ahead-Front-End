@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './CoverImage.css'
 
 const CoverImage = () => {

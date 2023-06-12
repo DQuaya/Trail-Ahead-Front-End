@@ -8,11 +8,12 @@ import Home from "./Components/Home/Home";
 import AboutPage from "./Components/About/AboutPage";
 import Signup from "./Components/Signup/Signup";
 import Login from "./Components/Login/Login";
+import HikeList from "./Components/HikeList/HikeList";
 import Hikedetails from "./Components/Hikedetails/Hikedetails";
- import HikeList from "./Components/HikeList/HikeList"; 
+
 import Profile from "./Components/Profile/Profile";
-// import Footer from "./Components/Footer/Footer";
-import Aboutsection from "./Components/Aboutsection/Aboutsection";
+import Footer from "./Components/Footer/Footer";
+
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <div className="App">
             {loading ? (
                 <PropagateLoader
-                    color={"#04700c"}
+                    color={"#f7792b"}
                     Loading={loading}
                     css={override}
                     size={40}
@@ -52,9 +53,11 @@ function App() {
                         {/* <Route path='hikes' element={<Hikes/>}/>
                     <Route path='profile' element={<Contact/>}/> */}
                         <Route path="hike" element={<HikeList />} />
+                        <Route path="hike/:id" element={<Hikedetails />} />
                         <Route path="profile" element={<Profile />} />
                     </Routes>
                     
+                    <Footer />
                 </>
             )}
         </div>

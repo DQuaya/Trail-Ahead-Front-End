@@ -1,3 +1,4 @@
+import Hikedetails from "../Hikedetails/Hikedetails";
 import "./Login.css";
 
 
@@ -12,6 +13,8 @@ const Login = () => {
         <button className="log-bttn">Log In</button>
     </form>
     </div>
+
+    
     
   )
 };
