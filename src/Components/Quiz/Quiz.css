@@ -1,18 +1,35 @@
 
-
+form {
+    width: 25%;
+   
+}
 
 .quizContainer {
-  
- width: 50%;
- align-self: center;
-  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
-
-input#question {
-  width: 200%;
+.quizBox {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+ 
+ 
 }
 
-input#answer {
-  width: 200%;
+.quizItem {
+  margin-bottom: 10px;
+}
+
+.quizItem input[type="text"] {
+  width: 100%; 
+}
+
+button[type="submit"] {
+  margin-top: 10px;
 }
