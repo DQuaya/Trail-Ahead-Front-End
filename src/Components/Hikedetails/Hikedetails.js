@@ -14,7 +14,7 @@ const Hikedetails = () => {
         <ArticleInfo/>
         <ProfilePix/>
         <WYSK/>
-        <WYSKArt/>
+        <WYSKArt />
     </div>
   )
 }
