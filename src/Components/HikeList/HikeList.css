@@ -9,5 +9,13 @@
 }
 
 .hikeListMain:nth-child(2){
-    color: rgb(74, 91, 0);
+
+    color: rgb(0, 91, 18);
 }
+
+.refreshHikesButton:hover {
+    background-color: #cdaa88;
+}
+
+.refreshHikesButton:active {
+    background-color: green;

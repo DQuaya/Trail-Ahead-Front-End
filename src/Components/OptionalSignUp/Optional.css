@@ -1,0 +1,37 @@
+.submit-bttn {
+    width: 65%;
+    height: 80%;
+    color: white;
+    background-color: #CB5B00;
+    padding: 12px 20px;
+}
+
+
+ .form-contain {
+    margin: 20% auto;
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: fit-content;    
+    max-width: 50%;  
+    width: 35%;  
+ } 
+
+/* .horizontal-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.horizontal-row > input {
+    width:100px;
+} */
+
+
+
+/* .experience {
+
+} */
+p {
+    font-size: x-small;
+}

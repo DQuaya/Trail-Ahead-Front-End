@@ -1,7 +1,7 @@
 import "./Signup.css";
 import Login from "../Login/Login";
-import ProgressBar from "../ProgressBar/ProgressBar";
-import Optional from "../OptionalSignUp/Optional";
+
+
 
 const Signup = () => {
     
@@ -60,30 +60,16 @@ const Signup = () => {
                         required
                     ></input>
                 </label>
-                <div className="horizontalRow">
-                    <label className="age">
-                        Age
-                        <input name="age" placeholder="Age" required></input>
-                    </label>
-                    <label>
-                        Gender
-                        <input name="gender" placeholder="Gender"></input>
-                    </label>
-                    <label>
-                        Experience
-                        <input
-                            name="experience"
-                            placeholder="Experience"
-                            required
-                        ></input>
-                    </label>
-                </div>
+                
 
                 <button className="sgn-button">Sign up</button>
             </form>
             <span>
                 Already have an account? <a href="/login">Sign in</a>
-                <Optional />
+                <p> <a href="/optional">Complete Profile</a></p>
+
+                <p className="pfont">By clicking Submit, you agree to Trail Ahead's User Agreement, Privacy Policy, and Cookie Policy.</p>
+               
             </span>
         </div>
     );
