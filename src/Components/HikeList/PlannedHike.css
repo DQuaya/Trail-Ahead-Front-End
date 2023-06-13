@@ -1,13 +1,17 @@
 .plannedHikeContainer {
-    background-color: brown;
+    background-color: #b6ad90;
     padding:10px
+}
+
+.plannedHikeContainer h2 {
+    color: #333d29
 }
 
 .hikePlannerContainer {
     display: flex;
     gap: 10px;
     padding: 1rem;
-    background-color: white;
+    background-color: #6c876f;
     width: 600px;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +20,6 @@
 .hikePlannerContainer > div {
     display: flex;
     flex-direction: column;
-}
-
-button {
-    padding: 12px 16px;
 }
 
 button {
@@ -47,9 +47,33 @@ button {
     background-color: darkgreen;
 }
 
+#hikeInfo {
+    display: flex;
+    flex-direction: row;
+}
+
 .hikerInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+@media screen and (max-width: 992px) {
+
+    .plannedHikeContainer {
+        /* background-color: brown; */
+        padding:10px;
+        width: 375px
+    }
+
+    .hikePlannerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+        /* background-color: #c2c5aa; */
+        align-items: center;
+        width: auto;
+    }
+}
