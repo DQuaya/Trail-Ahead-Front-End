@@ -40,7 +40,7 @@ const PlannedHike = ({
                 </div>
                 <div>
                     <h3>Availability</h3>
-                    <span>
+                    <span className="kevin">
                         {currentGroupSize !== maxGroupSize ? "active" : "full"}
                     </span>
                 </div>

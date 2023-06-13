@@ -29,10 +29,9 @@ function Quiz() {
   };
 
   return (
-    <div>
-      {" "}
-      <h1>Screening</h1>
+    <div className="box">
       <div className="quizContainer">
+      <h1 className="screen">Screening</h1>
         <form onSubmit={handleSubmit}>
           {quizzes.map((quiz, index) => (
             <div key={index} className="quizBox">
