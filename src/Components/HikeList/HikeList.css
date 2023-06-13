@@ -1,15 +1,19 @@
 .hikeListMain {
-    margin-top: 100px;
+    background: #00844f;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin-top: 100px;
-    background: #dc6e00;
+    padding-bottom: 100px;
+}
+
+.hikeListMain h1 {
+    color: #ffffff;
+    padding: 2rem;
 }
 
 .hikeListMain:nth-child(2){
-
     color: rgb(0, 91, 18);
 }
 
