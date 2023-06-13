@@ -1,45 +1,55 @@
 import React from 'react'
-import CoverImage from './CoverImage'
-import TrailName from './TrailName'
-import ArticleInfo from '../'
-import hikeImage from '../../assets/image2.jpg'
-import image1 from '../About/image1.png'
-import image2 from '../About/image2.png'
-import image3 from '../About/image3.png'
-import image4 from '../About/image4.png'
+
+import './Hikedetails.css'
+import image1 from '../../assets/image1.jpeg'
+
 
 const Hikedetails = () => {
   return (
     <div className='hike-details'>
-        <div class = "card-wrapper">
+
+      <div class = "card-wrapper">
+
       <div class = "card">
       
         <div class = "hike-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-             <img src={hikeImage} alt="" />
-             <img src={hikeImage} alt="" />
+
+              <img src={image1} alt="" />
+              <img src={image1} alt="" />
+              <img src={image1} alt="" />
+              <img src={image1} alt="" />
+                
             </div>
           </div>
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
-                <img src={image1} alt="" />
+
+                <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
-                <img src={image2} alt="" />
+
+                <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
-                <img src={image3} alt="" />
+
+                <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
-                <img src={image4} alt="" />
+
+                <img src="" alt="" />
+
               </a>
             </div>
           </div>
