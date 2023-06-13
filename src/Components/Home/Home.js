@@ -14,7 +14,7 @@ const Home = () => {
         <div className='header-heading'>
           <h3>Trail Ahead offers a quick and easy way for </h3>
           <h1><span>Hikers </span> to Meet <br/>Hikers</h1>
-            <p>Go checkout the avaliable Hikes</p>
+            <p className="motto">Go checkout the avaliable Hikes</p>
           <div className='header-btns'>
             <Link to='/signup' className='logo' smooth={true} duration={2000}>
               <a href='#' className='header-btn'>Join Now</a>
