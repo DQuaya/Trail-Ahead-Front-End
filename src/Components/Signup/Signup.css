@@ -51,7 +51,7 @@ input {
   display: flex;
   gap: 0.5rem;
 
-
+}
 label {
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ label {
 }
 
 .lname {
-  width: 550px;
+  width: 270px;
 }
 
 .email {
@@ -142,5 +142,8 @@ label {
 
   .sgn-button {
     width: 100%;
+  }
+  .fname{
+    width: 240px;
   }
 }
