@@ -121,15 +121,18 @@ img{
 .hike-detail ul{
     margin: 1rem 0;
     font-size: 0.9rem;
+    display:flex;
+    justify-content: center;
 }
 .hike-detail ul li{
-    margin: 0;
     list-style: none;
     background-size: 18px;
     padding-left: 1.2rem;
     margin: 0.4rem 0;
     font-weight: 600;
     opacity: 0.9;
+    display: flex;
+    flex-direction: column;
 }
 .hike-detail ul li span{
     font-weight: 400;
@@ -211,7 +214,7 @@ img{
     }
     .hike-content{
         padding-top: 0;
-        margin-top: -200px;
+        margin-top: 100px;
     }
     .hike-detail{
         flex-direction: column;
