@@ -12,7 +12,7 @@
 	font-family: 'Montserrat';
 	width: 400px;
 	position: absolute;
-    left: 25%;
+    left: 15%;
     top: 55%;
     text-align: left;
 	transform: translate(-25%,-55%);
@@ -71,8 +71,13 @@ span{
     /* font-size: xx-large; */
 }
 
+.motto{
+    font-size: x-large;
+}
 
-
+.home-main{
+    margin: 1;
+}
 /* Attempting to make home responsive */
 
 @media screen and (max-width: 768px){
