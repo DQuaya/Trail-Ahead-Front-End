@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Trail Ahead APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a companion APP to the [Trail Ahead](https://github.com/kevncrypting/Trail-Ahead-Back-End) hiking application. It is built with [React](https://react.dev/) and uses [Javascript](https://www.javascript.com/). This app was styled using CSS, along with a couple react animations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+The APP brings hikers from every experience level together.  Whether you are looking for a hiking companion or a hiking group, Trail Ahead has something for you. Users or Groups will be able to post an upcoming hike and allow others to join them.  Users will be able to see the experience level of every member.   
 
-### `npm start`
+- Each **Hike** has a `hikeLeader`. (more details to come soon)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running the App Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run the app locally, you'll need Node.js, npm, installed on your machine
 
-### `npm test`
+### Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone git@github.com:DQuaya/Trail-Ahead-Front-End.git
+cd Trail-Ahead-Front-End
+```
 
-### `npm run build`
+### Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install the dependencies:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app should now be running on [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+----
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Trello:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Thid application was built following several user stories.  Our group identified each problem we will be trying to solve with this application and built each features with that solution in mind.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Trello](https://trello.com/b/yR63Jnwv/trail-planner)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Wire Frames:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Along with the user stories and problems, our group developed several wireframes, that showed how we thought the app should look and where each filter should be located on the application.  We built and style the application based on these wireframes.
+Here is the link of the Wire Frames the group used as guidance to building and styling the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Wire Frames](https://www.canva.com/design/DAFksTJfrRU/pP0XTRh9ZbunZr-9Mni-4Q/edit)
+![Wire Frames](https://www.canva.com/design/DAFlAzzIJ0U/ArhWmraoV3PYBinw5qXLbQ/edit)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+.
