@@ -25,6 +25,7 @@ const PlannedHike = ({
                     <img
                         src={hikePlannerProfilePicture}
                         alt={`Profile Picture of ${hikePlannerName}`}
+                        className="hikePlannerImage"
                     />
                 </div>
                 <div>
