@@ -50,7 +50,7 @@ input {
 .horizontalRow {
   display: flex;
   gap: 0.5rem;
-
+}
 
 label {
   display: flex;
