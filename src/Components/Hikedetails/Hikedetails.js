@@ -7,6 +7,7 @@ import image1 from '../About/image1.png'
 import image2 from '../About/image2.png'
 import image3 from '../About/image3.png'
 import image4 from '../About/image4.png'
+import './Hikedetails.css'
 
 const Hikedetails = () => {
   return (
