@@ -1,16 +1,21 @@
 import React from 'react'
+
 import './Hikedetails.css'
 import image1 from '../../assets/image1.jpeg'
+
 
 const Hikedetails = () => {
   return (
     <div className='hike-details'>
+
       <div class = "card-wrapper">
+
       <div class = "card">
       
         <div class = "hike-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
+
               <img src={image1} alt="" />
               <img src={image1} alt="" />
               <img src={image1} alt="" />
@@ -21,22 +26,30 @@ const Hikedetails = () => {
           <div class = "img-select">
             <div class = "img-item">
               <a href = "#" data-id = "1">
+
                 <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "2">
+
                 <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "3">
+
                 <img src="" alt="" />
+
               </a>
             </div>
             <div class = "img-item">
               <a href = "#" data-id = "4">
+
                 <img src="" alt="" />
+
               </a>
             </div>
           </div>
