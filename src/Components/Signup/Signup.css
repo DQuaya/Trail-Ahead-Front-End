@@ -1,31 +1,31 @@
 * {
-    margin: 0;
-    border-radius: 5px;
-    box-sizing: border-box;
+  margin: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-
 .formContainer {
+
     margin: 20% auto;
     padding: 20px; 
-
     display: flex;
     flex-direction: column;
     background-color: white;
     max-width: fit-content;
-}
 
+}
 
 form-container {
+
     background-color: rgb(244, 5, 5);
     width: 30em;
-     height: 5em; 
+    height: 5em; 
     color: white;  
+
 }
 
-
-
 form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,60 +35,112 @@ form {
 }
 
 input {
-    width: 100%;
-    background-color: azure;
-    margin: 2px 0px;
-    border-radius: 5px;
-    padding: 12px 16px;
+  width: 100%;
+  background-color: azure;
+  margin: 2px 0px;
+  border-radius: 5px;
+  padding: 12px 16px;
 }
+
 
 .horizontalRow > input {
-    width: 100px;
-} 
-
-
-
-.horizontalRow {
-    display: flex;
-    gap: 0.5rem;
+  width: 100px;
 }
 
+.horizontalRow {
+  display: flex;
+  gap: 0.5rem;
+
+
 label {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .sgn-button {
-    width: 65%;
-    height: 80%;
-    color: white;
-    padding: 12px 20px;
-    background-color: #CB5B00;
+  width: 65%;
+  height: 80%;
+  color: white;
+  padding: 12px 20px;
+  background-color: #cb5b00;
 }
 
 /* form css */
 
-.fname{
-    width: 270px;
+
+.fname {
+  width: 270px;
 }
 
-.lname{
-    width: 270px;
+.lname {
+  width: 550px;
 }
 
-.email{
-    width: 550px;
+.email {
+  width: 550px;
+
 }
 
-.password{
-    width: 550px;
+.password {
+  width: 550px;
 }
 
-.confirm{
-    width: 550px;
+.confirm {
+  width: 550px;
 }
 
-.age{
-    width: 190px;
+.age {
+  width: 190px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    margin: 10% auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 15%; */
+  }
+
+  .form-contain {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fname,
+  .lname {
+    width: 100%;
+  }
+
+  .email,
+  .password,
+  .confirm {
+    width: 100%;
+  }
+
+  .age {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .formContainer {
+    margin: 5% auto;
+    max-width: 90%;
+    margin-top: 20%;
+  }
+
+  .horizontalRow {
+    flex-direction: column;
+  }
+
+  .horizontalRow > input {
+    width: 100%;
+  }
+
+  .sgn-button {
+    width: 100%;
+  }
 }

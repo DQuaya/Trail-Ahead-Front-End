@@ -10,6 +10,8 @@ const Login = () => {
         <h1><strong>Log In</strong></h1>
         <label className="username">Username<input type="text" name="Username" placeholder="username" required></input></label>
         <label className="psswrd">  password<input type="text" name="psswrd" placeholder="password" required></input></label>
+        
+        <p>By clicking Sign up, you agree to Trail Ahead's User Agreement, Privacy Policy, and Cookie Policy.</p>
         <button className="log-bttn">Log In</button>
     </form>
     </div>
