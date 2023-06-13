@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 
 *{
     box-sizing: border-box;
@@ -13,6 +15,10 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
+.time{
+    background: rgb(241, 130, 2);
+}
+
 img{
     width: 100%;
     display: block;
@@ -24,6 +30,8 @@ img{
     display: flex;
     width: 100%;
     transition: all 0.5s ease;
+    /* height: 600px; */
+    margin-top: 90px;
 }
 .img-showcase img{
     min-width: 100%;
@@ -44,6 +52,7 @@ img{
 }
 .hike-content{
     padding: 2rem 1rem;
+    margin-top: 140px;
 }
 .hike-title{
     font-size: 3rem;
@@ -116,9 +125,8 @@ img{
 .hike-detail ul li{
     margin: 0;
     list-style: none;
-    /* background: url(shoes_images/checked.png) left center no-repeat; */
     background-size: 18px;
-    padding-left: 1.7rem;
+    padding-left: 1.2rem;
     margin: 0.4rem 0;
     font-weight: 600;
     opacity: 0.9;
@@ -155,11 +163,11 @@ img{
 .hike-info .btn:hover{
     opacity: 0.9;
 }
-.social-links{
+.member-links{
     display: flex;
     align-items: center;
 }
-.social-links a{
+.member-links a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,10 +181,15 @@ img{
     font-size: 0.8rem;
     transition: all 0.5s ease;
 }
-.social-links a:hover{
+.member-links a:hover{
     background: #000;
     border-color: transparent;
     color: #fff;
+}
+
+.member-links img{
+    border-radius: 40px;
+    height: 30px;
 }
 
 @media screen and (min-width: 992px){
@@ -198,5 +211,12 @@ img{
     }
     .hike-content{
         padding-top: 0;
+        margin-top: -200px;
     }
+    .hike-detail{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
 }
