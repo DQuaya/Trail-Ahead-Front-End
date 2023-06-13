@@ -98,7 +98,7 @@
 @media screen and (max-width: 768px){
     .Reasons{
         flex-direction: column;
-        margin-top: -300px;
+        margin-top: 50px;
     }
     .left-r{
         grid-auto-rows: auto;
@@ -118,6 +118,11 @@
     .left-r > :nth-child(4){
         width: 7rem;
         height: 6rem;
+    }
+
+    .brands img{
+        width: 80px;
+        align-items: center;
     }
    
 }

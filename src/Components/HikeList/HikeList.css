@@ -1,6 +1,21 @@
 .hikeListMain {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 100px;
+    background: #dc6e00;
 }
+
+.hikeListMain:nth-child(2){
+
+    color: rgb(0, 91, 18);
+}
+
+.refreshHikesButton:hover {
+    background-color: #cdaa88;
+}
+
+.refreshHikesButton:active {
+    background-color: green;

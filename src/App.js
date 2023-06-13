@@ -14,6 +14,7 @@ import Optional from "./Components/OptionalSignUp/Optional";
 
 import Profile from "./Components/Profile/Profile";
 import Footer from "./Components/Footer/Footer";
+import Quiz from "./Components/Quiz/Quiz";
 
 
 
@@ -33,36 +34,39 @@ function App() {
     }, []);
 
     return (
-        <div className="App">
-            {loading ? (
-                <PropagateLoader
-                    color={"#f7792b"}
-                    Loading={loading}
-                    css={override}
-                    size={40}
-                />
-            ) : (
-                <>
-                    <Navbar />
-                    {/* <Home /> */}
-                    {/* <Testing/> */}
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="about" element={<AboutPage />} />
-                        <Route path="signup" element={<Signup />} />
-                        <Route path="login" element={<Login />} />
-                        {/* <Route path='hikes' element={<Hikes/>}/>
+      <div className="App">
+        {loading ? (
+          <PropagateLoader
+            color={"#f7792b"}
+            Loading={loading}
+            css={override}
+            size={40}
+          />
+        ) : (
+          <>
+            <Navbar />
+            {/* <Home /> */}
+            {/* <Testing/> */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="login" element={<Login />} />
+              {/* <Route path='hikes' element={<Hikes/>}/>
                     <Route path='profile' element={<Contact/>}/> */}
-                        <Route path="hike" element={<HikeList />} />
-                        <Route path="hike/:id" element={<Hikedetails />} />
-                        <Route path="profile" element={<Profile />} />
-                        <Route path="optional" element={<Optional />} />
-                    </Routes>
-                    
-                    <Footer />
-                </>
-            )}
-        </div>
+
+              <Route path="hike" element={<HikeList />} />
+              {/* <Route path="hike/:id" element={<Hikedetails />} /> */}
+              <Route path="details" element={<Hikedetails/>}/>
+              <Route path="profile" element={<Profile />} />
+              <Route path="quiz" element={<Quiz/>} />
+            </Routes>
+            {/* <Quiz /> */}
+            <Footer />
+          </>
+        )}
+      </div>
+
     );
 }
 

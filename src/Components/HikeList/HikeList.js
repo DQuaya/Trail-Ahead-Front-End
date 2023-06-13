@@ -1,40 +1,129 @@
 import { useState, useEffect } from "react";
-
-// import coverImage from "../../assets/mountains.jpg";
-
-import { redirect } from "react-router-dom";
-
 import PlannedHike from "./PlannedHike";
 import "./HikeList.css";
 
 const HikeList = () => {
-    const [hikes, setHikes] = useState([]); // when data is fetched from the backend, the setHikes function is used to store the data in hikes
+    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
+    const [hikes, setHikes] = useState([
+        //     {
+        //     hikePlanner: 1
+        // }
+    ]);
+    const [users, setUsers] = useState([
+        //     {
+        //     id: 1,
+        //     firstName: "Refresh",
+        //     lastName: "Refresh"
+        // }
+    ]);
+    const [hikers, setHikers] = useState([]);
+
+    // defines functions to fetch all necessary information
+    const fetchHikeData = () => {
         fetch("http://localhost:3000/hikes")
             .then((response) => response.json())
             .then((data) => setHikes(data));
-    }, []);
-
-    const handleRouteChange = (id) => {
-        redirect(`/hikes/${id}`)
     };
+
+    const fetchUserData = () => {
+        fetch("http://localhost:3000/users")
+            .then((response) => response.json())
+            .then((data) => setUsers(data));
+    };
+
+    const fetchHikerData = () => {
+        fetch("http://localhost:3000/hikelist")
+            .then((response) => response.json())
+            .then((data) => setHikers(data));
+    };
+
+    function calculateGroupSize(hikeId) {
+        const currentGroupSize = hikers.filter(
+            (hike) => hike.hikeId === hikeId
+        );
+
+        return currentGroupSize.length;
+    }
+
+    function findHikePlannerName(hikePlannerId) {
+        const hikePlanner = users.filter((user) => user.id === hikePlannerId);
+        console.log("loaded", hikePlanner);
+        console.log("users", users);
+
+        if (hikePlanner.length > 0) {
+            const name = `${hikePlanner[0].firstName} ${hikePlanner[0].lastName}`;
+            return name;
+        }
+
+        return "Error";
+    }
+
+    function findHikePlannerProfilePicture(hikePlannerId) {
+        const hikePlanner = users.filter((user) => user.id === hikePlannerId);
+
+        if (hikePlanner.length > 0) {
+            const profilePicture = hikePlanner[0].profilePicture;
+            return profilePicture;
+        }
+
+        return "Error";
+    }
+
+    function findHikePlannerExperience(hikePlannerId) {
+        const hikePlanner = users.filter((user) => user.id === hikePlannerId);
+
+        if (hikePlanner.length > 0) {
+            const experience = hikePlanner[0].experience;
+            return experience;
+        }
+
+        return "Error";
+    }
+
+    // on page load, fetches all data necessary to render HikeList
+    useEffect(() => {
+        const setupHike = async () => {
+            await fetchHikeData();
+            await fetchUserData();
+            await fetchHikerData();
+        };
+
+        setupHike();
+        setIsLoading(false);
+    }, []);
 
     return (
         <div className="hikeListMain">
             <h1>Available Hikes</h1>
-            {hikes.map((hike) => (
-                <PlannedHike
-                    key={hike.name}
-                    name={hike.name}
-                    pictureAltText={hike.pictureAltText}
-                    experience={hike.experience}
-                    timeDate={hike.timeDate}
-                    groupSize={hike.groupSize}
-                    maxGroupSize={hike.maxGroupSize}
-                    hikeId={hike.id}
-                />
-            ))}
+            <button className="refreshHikesButton"
+                onClick={() => {
+                    fetchHikeData();
+                }}
+            >
+                Refresh List
+            </button>
+            {isLoading
+                ? "Page is loading..."
+                : hikes.map((hike) => (
+                      <PlannedHike
+                          key={hike.id}
+                          hikePlannerName={findHikePlannerName(
+                              hike.hikePlanner
+                          )}
+                          hikePlannerProfilePicture={findHikePlannerProfilePicture(
+                              hike.hikePlanner
+                          )}
+                          hikePlannerExperience={findHikePlannerExperience(
+                              hike.hikePlanner
+                          )}
+                          hikeId={hike.id}
+                          trailName={hike.trailName}
+                          timeDate={hike.timeDate}
+                          currentGroupSize={calculateGroupSize(hike.id)}
+                          maxGroupSize={hike.maxGroupSize}
+                      />
+                  ))}
         </div>
     );
 };

@@ -37,14 +37,16 @@ function AboutPage() {
                 with a variety levels of hiking experience can come, and enjoy the outdoors
                 with anyone who shares that same love for exploring nature.
                 
-              <p><span>
+                </p>
+                <p className="purpose">
                     When you join, you will have the opportunity to build friendships.
                     Friendships have a huge impact on your mental health and happiness. 
                     Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. 
                     Developing close friendships can also have a powerful impact on your physical health.
                     Along with that Hiking itself have a ton of health benefits.
-              </span></p>
               </p>
+             
+              
             </div>
           </div>
         </container>
