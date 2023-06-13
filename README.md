@@ -36,7 +36,7 @@ The app should now be running on [http://localhost:3000](http://localhost:3000).
 
 ### Trello:
 
-Thid application was built following several user stories.  Our group identified each problem we will be trying to solve with this application and built each features with that solution in mind.  
+This application was built following several user stories.  Our group identified each problem we will be trying to solve with this application and built each features with that solution in mind.  
 
 ![Trello](https://trello.com/b/yR63Jnwv/trail-planner)
 
