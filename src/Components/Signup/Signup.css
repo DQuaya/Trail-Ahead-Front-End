@@ -74,7 +74,7 @@ label {
 }
 
 .lname {
-  width: 550px;
+  width: 270px;
 }
 
 .email {
@@ -139,8 +139,11 @@ label {
   .horizontalRow > input {
     width: 100%;
   }
-
+  
   .sgn-button {
     width: 100%;
+  }
+  .fname{
+    width: 240px;
   }
 }
