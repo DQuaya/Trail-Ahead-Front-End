@@ -56,8 +56,8 @@ function App() {
                     <Route path='profile' element={<Contact/>}/> */}
 
               <Route path="hike" element={<HikeList />} />
-              {/* <Route path="hike/:id" element={<Hikedetails />} /> */}
-              <Route path="details" element={<Hikedetails/>}/>
+              <Route path="hike/:id" element={<Hikedetails id="/:id"/>} />
+              {/* <Route path="details" element={<Hikedetails id={(id)} />}/> */}
               <Route path="profile" element={<Profile />} />
               <Route path="quiz" element={<Quiz/>} />
             </Routes>

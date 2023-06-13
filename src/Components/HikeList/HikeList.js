@@ -5,21 +5,10 @@ import "./HikeList.css";
 const HikeList = () => {
     const [isLoading, setIsLoading] = useState(true);
 
-    const [hikes, setHikes] = useState([
-        //     {
-        //     hikePlanner: 1
-        // }
-    ]);
-    const [users, setUsers] = useState([
-        //     {
-        //     id: 1,
-        //     firstName: "Refresh",
-        //     lastName: "Refresh"
-        // }
-    ]);
+    const [hikes, setHikes] = useState([]);
+    const [users, setUsers] = useState([]);
     const [hikers, setHikers] = useState([]);
 
-    // defines functions to fetch all necessary information
     const fetchHikeData = () => {
         fetch("http://localhost:3000/hikes")
             .then((response) => response.json())
@@ -96,7 +85,8 @@ const HikeList = () => {
     return (
         <div className="hikeListMain">
             <h1>Available Hikes</h1>
-            <button className="refreshHikesButton"
+            <button
+                className="refreshHikesButton"
                 onClick={() => {
                     fetchHikeData();
                 }}
