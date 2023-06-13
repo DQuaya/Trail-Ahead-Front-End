@@ -20,10 +20,19 @@ button {
     padding: 12px 16px;
 }
 
+button {
+    padding: 12px 16px;
+}
+
 h3 {
     
 }
 
 span {
     color:green
+}
+
+.hikePlannerImage {
+    border-radius: 50%;
+    width: 100px
 }
