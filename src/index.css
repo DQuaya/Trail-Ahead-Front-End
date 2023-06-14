@@ -62,7 +62,8 @@ nav ul li a{
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: 500;
-	color:#f7792b;
+	color:#ff7c0a;
+    background-color: #2c653a71;
     letter-spacing: 1px;
     border-radius: 3px;
     transition: 0.2s ease-in-out;
@@ -342,9 +343,10 @@ nav .menu-btn,
             padding:28px 20px;
             position:relative;
             user-select: none;
+            background-color: #00643c71;
         }
         nav .menu-icon .nav-icon{
-            background-color:#0ace31;
+            background-color:#cccccc;
             display:block;
             height:2px;
             position:relative;
@@ -353,7 +355,7 @@ nav .menu-btn,
         }
         nav .menu-icon .nav-icon:before,
         nav .menu-icon .nav-icon:after{
-            background:rgb(255, 255, 255);
+            background:#ffffff;
             content:'';
             display:block;
             height:100%;
@@ -363,11 +365,11 @@ nav .menu-btn,
         }
         nav .menu-icon .nav-icon:before{
             top:6px;
-            background-color: #04cc43;
+            background-color: #ffffff;
         }
         nav .menu-icon .nav-icon:after{
             top:-6px;
-            background-color: #04b018;
+            background-color: #ffffff;
         }
         nav .menu-btn:checked ~ .menu-icon .nav-icon{
             background:transparent;
@@ -375,12 +377,12 @@ nav .menu-btn,
         nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
             transform: rotate(-45deg);
             top:0;
-            background-color: #05a746;
+            background-color: #ffffff;
         }
         nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
             transform: rotate(45deg);
             top:0;
-            background-color: #06c633;
+            background-color: #ffffff;
         }
         nav .menu-btn{
             display:none;

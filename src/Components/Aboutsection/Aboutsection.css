@@ -84,16 +84,70 @@
 
 .brands{
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
 .brands>img{
-    width: 8.5rem;
+    width: 6rem;
 }
 
-
-
 /* making this section responsive  */
+
+@media screen and (max-width: 1190px){
+    .Reasons{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .left-r{
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+    .left-r > :nth-child(1){
+        width: 16rem;
+        height: 24rem;
+    }
+    .left-r > :nth-child(2){
+        width: 25rem;
+        height: 10rem;
+    }
+    .left-r > :nth-child(3){
+        width: 15rem;
+        grid-column: 3/4;
+    }
+    .left-r > :nth-child(4){
+        width: 25rem;
+        height: 13rem;
+        grid-column: 2/3;
+    }
+    .right-r{
+        flex: 1 1;
+        text-transform: uppercase;
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+    } 
+    .whyJoin {
+        width: 650px;
+        margin-left: 100px;
+    }
+    .details-r{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .brands{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .brands img{
+        width: 10rem;
+        align-items: center;
+    }
+
+}
 
 @media screen and (max-width: 768px){
     .Reasons{
@@ -119,9 +173,19 @@
         width: 7rem;
         height: 6rem;
     }
-
+    .right-r{
+        flex: 1 1;
+        text-transform: uppercase;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    } 
+    .whyJoin {
+        width: 100%;
+        margin-left: 0px;
+    }
     .brands img{
-        width: 80px;
+        width: 9rem;
         align-items: center;
     }
    

@@ -105,9 +105,11 @@ const Signup = () => {
                     Sign in here
                 </Link>
             </span>
-            <p>
-                <a href="/optional">Complete Profile</a>
-            </p>
+            <span>
+                <Link to="/optional" className="">
+                    Complete Profile
+                </Link>
+            </span>
         </div>
     );
 };

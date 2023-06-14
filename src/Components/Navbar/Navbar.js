@@ -16,7 +16,7 @@ function Navbar(){
     }
 
     window.addEventListener('scroll', changeBackground);
-    
+
     return (
     <nav className={nav ? "nav active" : "nav"}>
         <NavLink to='/' className='logo' smooth={true} duration={2000}>

@@ -1,101 +1,114 @@
-#main{
-    width:100%;
-    height:868px;
+#main {
+    width: 100%;
+    height: 868px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-     background-image: url('./hero.GIF');
+    background-image: url("./hero.GIF");
 }
 
-
-.header-heading{
-	font-family: 'Montserrat';
-	width: 400px;
-	position: absolute;
+.header-heading {
+    font-family: "Montserrat";
+    width: 400px;
+    position: absolute;
     left: 15%;
     top: 55%;
     text-align: left;
-	transform: translate(-25%,-55%);
+    transform: translate(-25%, -55%);
 }
-.header-heading span{
-    font-family: 'Alfa Slab One';
+.header-heading span {
+    font-family: "Alfa Slab One";
     color: #f85700;
     border-bottom: 2px solid #c26800;
 }
-.header-heading .details{
+.header-heading .details {
     font-size: 23px;
     color: #fcfafa;
 }
-.header-heading h3{
-	font-family:'Bebas Neue';
-	font-size: 1.6rem;
-	margin:0px;
-	letter-spacing: 2px;
-	color:#fbfafa;
+.header-heading h3 {
+    font-family: "Bebas Neue";
+    font-size: 1.6rem;
+    margin: 0px;
+    letter-spacing: 2px;
+    color: #fbfafa;
 }
-.header-heading h1{
-	font-family:'Alfa Slab One';
-	font-size: 4rem;
-	margin:0px;
-	letter-spacing: 2px;
-	color:#fcfcfb;
+.header-heading h1 {
+    font-family: "Alfa Slab One";
+    font-size: 4rem;
+    margin: 0px;
+    letter-spacing: 2px;
+    color: #fcfcfb;
 }
-.header-btns{
+.header-btns {
     display: flex;
     margin-top: 40px;
 }
-.header-btn{
-	width:160px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
+.header-btn {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 1.4rem;
-    font-family:'Lato';
+    font-family: "Lato";
     background-color: #cb5b00;
     box-shadow: 5px 10px 30px rgba(27, 241, 84, 0.336);
     border-radius: 5px;
-	color:#ffffff;
+    color: #ffffff;
 }
-.header-btn:hover{
-	background-color: transparent;
+.header-btn:hover {
+    background-color: transparent;
     transition: all ease 0.5s;
     color: #0ca216;
     border: 2px solid #22bf34;
 }
 
-span{
+span {
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(245, 127, 1);
     /* font-size: xx-large; */
 }
 
-.motto{
+.motto {
     font-size: x-large;
 }
 
-.home-main{
+.home-main {
     margin: 1;
 }
+
+.about-trail {
+    margin: 1rem 0px;
+}
+
 /* Attempting to make home responsive */
 
-@media screen and (max-width: 768px){
-
-    #main{
-		background-image: url('./mobile2.jpg');
+@media screen and (max-width: 1190px) {
+    #main {
+        background-image: url("./mobile2.jpg");
         flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-	}
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 768px) {
+    #main {
+        background-image: url("./mobile2.jpg");
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-    .header-heading h3{
-        font-size:large;
+    .header-heading h3 {
+        font-size: large;
         margin-left: 30px;
     }
 
-    .header-heading h1{
+    .header-heading h1 {
         font-size: xx-large;
         margin-left: 100px;
     }
@@ -105,53 +118,9 @@ span{
         color: white;
     }
 
-    .header-btns{
+    .header-btns {
         margin-left: 100px;
     }
-    /* .header-heading{
-		left: 50%;
-		top: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-
-    .header-heading h2{
-        font-size: 1.5rem;
-    }
-
-    .header-heading h1{
-        font-size: 3rem;
-    } */
-    /* .header-heading h3{
-        color: red;
-        font-size: 2rem;
-        
-    } */
-
-    /* #attempt{
-        color: red;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    .header-heading .details{
-        font-size: 1rem;
-    } 
-    
-    .home-main{
-        flex-direction: column;
-    }
-
-    #main:nth-child(1){
-        color: red;
-    } */
 }
 
-
 /* Stlyed by Quaya */
-
-
-
-

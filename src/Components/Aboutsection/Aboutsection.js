@@ -1,80 +1,87 @@
-import React from 'react'
-import './Aboutsection.css'
-import image1 from "../../assets/image1.jpeg"
-import image2 from "../../assets/image2.jpg"
-import image3 from "../../assets/image3.jpg"
-import image4 from "../../assets/image4.jpg"
- import tkp from "../../assets/img4.png"
- import azr from "../../assets/img2.png"
- import gdp from "../../assets/img3.png"
- import dnb from "../../assets/img1.png"
-import tick from "../../assets/tick.png"
-import {Link} from 'react-router-dom'
+import React from "react";
+import "./Aboutsection.css";
+import image1 from "../../assets/image1.jpeg";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3.jpg";
+import image4 from "../../assets/image4.jpg";
+import tkp from "../../assets/img4.png";
+import azr from "../../assets/img2.png";
+import gdp from "../../assets/img3.png";
+import dnb from "../../assets/img1.png";
+import tick from "../../assets/tick.png";
+import { Link } from "react-router-dom";
 
 // Coded by Quaya
-// import { Color, ColorKeyframeTrack } from 'three'
 
 const Aboutsection = () => {
-  return (
-    <div className="Reasons" id="reasons">
-        <div className="left-r">
-            <img src={image1} alt="" />
-            <img src={image2} alt="" />
-            <img src={image3} alt="" />
-            <img src={image4} alt="" />
-        </div>
-
-        <div className="right-r">
-
-            
-
-            <div>
-                <span className='stroke-text'>why</span>
-                <span> Join?</span>
+    return (
+        <div className="Reasons" id="reasons">
+            <div className="left-r">
+                <img src={image1} alt="" />
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+                <img src={image4} alt="" />
             </div>
 
-            <div className='details-r'>
-                <div>
-                    <img src={tick} alt="" />
-                    <span>Where Hikers Meet Hikers</span>
+            <div className="right-r">
+                <div className="whyJoin">
+                    <div>
+                        <span className="stroke-text">why</span>
+                        <span> Join?</span>
+                    </div>
+
+                    <div className="details-r">
+                        <div>
+                            <img src={tick} alt="" />
+                            <span>Where Hikers Meet Hikers</span>
+                        </div>
+                        <div>
+                            <img src={tick} alt="" />
+                            <span>Building Community</span>
+                        </div>
+                        <div>
+                            <img src={tick} alt="" />
+                            <span>Building Friendships</span>
+                        </div>
+                        <div>
+                            <img src={tick} alt="" />
+                            <span>Enjoy outdoors</span>
+                        </div>
+                        <Link
+                            to="/about"
+                            className="logo"
+                            smooth={true}
+                            duration={2000}
+                        >
+                            <a href="#" className="header-btn">
+                                Read More
+                            </a>
+                        </Link>
+                    </div>
                 </div>
                 <div>
-                    <img src={tick} alt="" />
-                    <span>Building Community</span>
-                </div> 
-                <div>
-                    <img src={tick} alt="" />
-                    <span>Building Friendships</span>
-                </div> 
-                <div>
-                    <img src={tick} alt="" />
-                    <span>Enjoy outdoors</span>
-                </div> 
-                <Link to='/about' className='logo' smooth={true} duration={2000}>
-              <a href='#' className='header-btn'>Read More</a>
-            </Link> 
+                    <span
+                        style={{
+                            color: "orange",
+                            fontWeight: "normal",
+                            fontSize: "2rem"
+                        }}
+                    >
+                        Our developers
+                    </span>
+
+                    <div className="brands">
+                        <img src={dnb} alt="" />
+                        <img src={tkp} alt="" />
+                        <img src={azr} alt="" />
+                        <img src={gdp} alt="" />
+                    </div>
+                </div>
             </div>
-            <span 
-              style={{
-                color:"orange", 
-                fontWeight: "normal"
-              }}
-              >
-                Our developers
-            </span>
-
-            <div className="brands">
-                <img src={dnb} alt="" />
-                <img src={tkp} alt="" />
-                <img src={azr} alt="" />
-                <img src={gdp} alt="" />
-            </div> 
-            
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Aboutsection
+export default Aboutsection;
 
 // Coded by Quaya
