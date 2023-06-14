@@ -71,11 +71,7 @@ select {
         align-items: start;
         width: 300px;
     }
-    /* .horizontalRow {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    } */
+
     .socialMediaSection .horizontalRow {
         gap: 10px;
     }
