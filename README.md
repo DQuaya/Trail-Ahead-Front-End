@@ -1,3 +1,5 @@
+![Home Preview](public/assets/home.png)
+
 # Trail Ahead
 Trail Ahead is a full-stack web application created with the goal of helping hikers find hikers. This front-end client is built with [React](https://react.dev/) functional components, styled with vanilla CSS, and incorporates an animation library to improve the user experience. It is accompanied by the [Trail Ahead API](https://github.com/kevncrypting/Trail-Ahead-Back-End).
 
@@ -38,13 +40,15 @@ You can access the deployed application at: https://trail-ahead.onrender.com/
 
 ## Application Flow and Wireframes
 
-![Wireframe](public/assets/wireframe.png)
-
 The application has the following main screens:
 
 - About: Shows information about the authors and the purpose of the project.
 
+![Hike List Preview](public/assets/hikelist.png)
+
 - Hike List: Shows a list of all hikes pulled from the Trail Ahead API, as well as a button to create a new hike. When a specific hike is viewed, the subsequent screen displays all related information to that specific hike. 
+
+![Profile Preview](public/assets/profile.png)
 
 - Profile: Shows a user's profile with associated personal information (optional, user is prompted for this information during sign up), including:
 
@@ -58,6 +62,7 @@ The application has the following main screens:
 Using Trello, our group created user stories and practiced using the Kanban method of project management to visualize our workflow. We identified each problem that we wanted to solve with a specific user in mind, and built each feature with that solution in mind. We also made use of Test-Driven Development and the red-green-refactor cycle while creating our components. 
 
 ![Trello](public/assets/trello.png)
+
 ![User Story](public/assets/user_story.png)
 
 
@@ -68,10 +73,14 @@ Using pen-and-paper, Jamboard, and Canva, our group also developed several high-
 Here are a few sample wireframes that our group used as guidance to build and styling the application.
 
 ![Wireframe of Hike Details](public/assets/hike_details_wireframe.png)
+
 ![Wireframe of Profile Page](public/assets/profile_wireframe.png)
 
 ### Development Team
-DonQuaya Brown - [LinkedIn](https://www.linkedin.com/in/donquayabrown/) and [GitHub](https://github.com/DQuaya)
-Thanuseng Kevin Prachith - [LinkedIn](https://www.linkedin.com/in/tkprachith/) and [GitHub](https://github.com/kevncrypting)
-Aaliyah Russell - [LinkedIn](https://www.linkedin.com/in/aaliyah-russell-80900a1b5/) and [GitHub](https://github.com/Azrussell)
-Gerald Pinkins - [LinkedIn](https://www.linkedin.com/in/gerald-pinkins/) and [GitHub](https://github.com/GeraldPinkinsJr)
+DonQuaya Brown - [LinkedIn](https://www.linkedin.com/in/donquayabrown/) | [GitHub](https://github.com/DQuaya)
+
+Thanuseng Kevin Prachith - [LinkedIn](https://www.linkedin.com/in/tkprachith/) | [GitHub](https://github.com/kevncrypting)
+
+Aaliyah Russell - [LinkedIn](https://www.linkedin.com/in/aaliyah-russell-80900a1b5/) | [GitHub](https://github.com/Azrussell)
+
+Gerald Pinkins - [LinkedIn](https://www.linkedin.com/in/gerald-pinkins/) | [GitHub](https://github.com/GeraldPinkinsJr)
