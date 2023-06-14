@@ -68,7 +68,7 @@ Using pen-and-paper, Jamboard, and Canva, our group also developed several high-
 Here are a few sample wireframes that our group used as guidance to build and styling the application.
 
 ![Wireframe of Hike Details](public/assets/hike_details_wireframe.png)
-![Wireframe of Profile Page](public/assets/profile_wireframe.png.png)
+![Wireframe of Profile Page](public/assets/profile_wireframe.png)
 
 ### Development Team
 DonQuaya Brown - [LinkedIn](https://www.linkedin.com/in/donquayabrown/) and [GitHub](https://github.com/DQuaya)
