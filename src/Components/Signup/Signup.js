@@ -12,7 +12,7 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch(`http://localhost:3000/auth/register`, {
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/auth/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

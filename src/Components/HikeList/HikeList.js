@@ -11,19 +11,19 @@ const HikeList = () => {
     const [hikers, setHikers] = useState([]);
 
     const fetchHikeData = () => {
-        fetch("http://localhost:3000/hikes")
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/hikes`)
             .then((response) => response.json())
             .then((data) => setHikes(data));
     };
 
     const fetchUserData = () => {
-        fetch("http://localhost:3000/users")
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/users`)
             .then((response) => response.json())
             .then((data) => setUsers(data));
     };
 
     const fetchHikerData = () => {
-        fetch("http://localhost:3000/hikelist")
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/hikelist`)
             .then((response) => response.json())
             .then((data) => setHikers(data));
     };
