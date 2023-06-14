@@ -11,7 +11,6 @@ import Login from "./Components/Login/Login";
 import HikeList from "./Components/HikeList/HikeList";
 import Hikedetails from "./Components/Hikedetails/Hikedetails";
 import Optional from "./Components/OptionalSignUp/Optional";
-
 import Profile from "./Components/Profile/Profile";
 import Footer from "./Components/Footer/Footer";
 import Quiz from "./Components/Quiz/Quiz";
@@ -45,19 +44,14 @@ function App() {
         ) : (
           <>
             <Navbar />
-            {/* <Home /> */}
-            {/* <Testing/> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="about" element={<AboutPage />} />
-              <Route path="signup" element={<Signup />} />
+              <Route path="register" element={<Signup />} />
               <Route path="login" element={<Login />} />
-              {/* <Route path='hikes' element={<Hikes/>}/>
-                    <Route path='profile' element={<Contact/>}/> */}
-
+              <Route path="optional" element={<Optional />} />
               <Route path="hike" element={<HikeList />} />
               <Route path="hike/:id" element={<Hikedetails id="/:id"/>} />
-              {/* <Route path="details" element={<Hikedetails id={(id)} />}/> */}
               <Route path="profile" element={<Profile />} />
               <Route path="quiz" element={<Quiz/>} />
               {/* <Route path="optional" element={<Optional />} /> */}
