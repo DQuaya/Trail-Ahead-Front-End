@@ -70,9 +70,38 @@ function Optional() {
         reader.readAsDataURL(file);
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/users/${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                age,
+                gender,
+                experience,
+                city,
+                state,
+                zipcode,
+                facebook,
+                instagram,
+                twitter,
+                pinterest,
+                tagline,
+            }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                setError(data.message);
+                console.log("inside fetch", error);
+            });
+    };
+
     return (
         <div className="formContainer">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <h1>Complete Your Profile</h1>
                 <h3>Demographics</h3>
                 <div className="horizontalRow">
@@ -95,18 +124,6 @@ function Optional() {
                             value={gender}
                             onChange={(e) => setGender(e.target.value)}
                         ></input>
-                        {/* <select
-                                value={gender}
-                                onChange={(e) => {
-                                    setGender(e.target.value);
-                                }}
-                            >
-                                <option value="">Select an option</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="nonbinary">Non-Binary</option>
-                                <option value="other">other</option>
-                            </select> */}
                     </label>
                     <label className="secondaryRow">
                         <span>Experience</span>
@@ -234,7 +251,9 @@ function Optional() {
                     ></input>
                 </label>
 
-                <button className="actionButton">Submit</button>
+                <button type="submit" className="actionButton">
+                    Submit
+                </button>
             </form>
         </div>
     );
