@@ -1,5 +1,5 @@
 .hikeListMain {
-    background-image: url('../../assets//hikelist.jpeg');
+    background-image: url('../../assets/hikelist.jpeg');
     display: flex;
     flex-direction: column;
     align-items: center;
