@@ -27,7 +27,8 @@ const Profile = () => {
                     </ul>
                     
                     <div className='content'>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, quis unde. Ab, est at cumque, aliquam, provident aperiam enim consequatur sed rem debitis deserunt consectetur unde magnam a incidunt eligendi.</p>
+                        <p>Hey everyone, I am interested in exploring nature but I am a rookie when it comes to hiking.
+                            I'm just looking for a group to join or a couple people to show me the ropes.</p>
 
                         <ul>
                             <li>twitter</li>

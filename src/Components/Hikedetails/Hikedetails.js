@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import image1 from "../../assets/image1.jpeg";
 
+// coded  by Quaya
 const Hikedetails = () => {
     const [hike, setHike] = useState({});
     const [users, setUsers] = useState([]);
@@ -165,3 +166,5 @@ const Hikedetails = () => {
 };
 
 export default Hikedetails;
+
+// coded  by Quaya

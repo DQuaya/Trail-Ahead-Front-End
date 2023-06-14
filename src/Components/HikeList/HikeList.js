@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PlannedHike from "./PlannedHike";
 import "./HikeList.css";
 
+
 const HikeList = () => {
     const [isLoading, setIsLoading] = useState(true);
 
