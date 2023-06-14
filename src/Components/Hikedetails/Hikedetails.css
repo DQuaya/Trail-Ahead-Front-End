@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-
+/* styled by Quaya */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -31,10 +31,11 @@ img{
     width: 100%;
     transition: all 0.5s ease;
     /* height: 600px; */
-    margin-top: 90px;
+    margin-top: 130px;
 }
 .img-showcase img{
     min-width: 100%;
+    height: 650px;
 }
 .img-select{
     display: flex;
@@ -78,13 +79,14 @@ img{
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: #0e7401;
+    background: #cb6f00;
     color: #fff;
     padding: 0 0.3rem;
     transition: all 0.5s ease;
 }
 .hike-link:hover{
     opacity: 0.9;
+    background: rgb(24, 249, 4);
 }
 .hike-rating{
     color: #ffc107;
@@ -110,13 +112,15 @@ img{
 }
 .hike-detail h2{
     text-transform: capitalize;
-    color: #12263a;
+    color: #fcfcfc;
     padding-bottom: 0.6rem;
 }
 .hike-detail p{
     font-size: 0.9rem;
     padding: 0.3rem;
     opacity: 0.8;
+    background: rgb(255, 255, 255);
+    border: 2px solid orange;
 }
 .hike-detail ul{
     margin: 1rem 0;
@@ -149,6 +153,7 @@ img{
     outline: 0;
     margin-right: 0.2rem;
     margin-bottom: 1rem;
+    
 }
 .hike-info input{
     width: 60px;
@@ -162,6 +167,14 @@ img{
 }
 .hike-info .btn:last-of-type{
     background: #9c5503;
+}
+
+.hike-info .btn:first-of-type:hover{
+    background-color: rgb(255, 128, 0);
+}
+
+.hike-info .btn:last-of-type:hover{
+    background: rgb(1, 178, 1);
 }
 .hike-info .btn:hover{
     opacity: 0.9;
@@ -223,3 +236,5 @@ img{
     }
 
 }
+
+/* styled by Quaya */

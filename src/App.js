@@ -60,6 +60,7 @@ function App() {
               {/* <Route path="details" element={<Hikedetails id={(id)} />}/> */}
               <Route path="profile" element={<Profile />} />
               <Route path="quiz" element={<Quiz/>} />
+              {/* <Route path="optional" element={<Optional />} /> */}
             </Routes>
             {/* <Quiz /> */}
             <Footer />
