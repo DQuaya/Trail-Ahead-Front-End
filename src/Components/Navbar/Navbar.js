@@ -5,6 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 function Navbar(){
     const [nav, setnav] = useState(false);
+    const [menuOpened, setMenuOpened] = useState(false)
 
     const changeBackground =()=>{
         if (window.scrollY >= 50){
@@ -28,8 +29,25 @@ function Navbar(){
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-                <li><NavLink to="/" smooth={true} duration={2000}>Home</NavLink></li>
-                <li><NavLink to="about" smooth={true} duration={2000}>About</NavLink></li>
+                <li>
+                    <NavLink onClick={()=>setMenuOpened(false)}
+                    activeClass='active'
+                    to='/'
+                    span={true}
+                    smooth={true}
+                    >
+                    Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink onClick={() => setMenuOpened(false)} 
+                    to="about" 
+                    span={true} 
+                    smooth={true}
+                    >
+                    About
+                    </NavLink>
+                    </li>
                 <li><NavLink to="hike" smooth={true} duration={2000}>Hike</NavLink></li>
                 <li><NavLink to="profile" smooth={true} duration={2000}>Profile</NavLink></li> 
         </ul>
