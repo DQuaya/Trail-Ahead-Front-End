@@ -16,7 +16,7 @@ const Home = () => {
           <h1><span>Hikers </span> to Meet <br/>Hikers</h1>
             <p className="motto">Go checkout the avaliable Hikes</p>
           <div className='header-btns'>
-            <Link to='/signup' className='logo' smooth={true} duration={2000}>
+            <Link to='/register' className='logo' smooth={true} duration={2000}>
               <a href='#' className='header-btn'>Join Now</a>
             </Link> 
           </div>
