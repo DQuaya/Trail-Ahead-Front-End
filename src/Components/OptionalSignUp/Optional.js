@@ -73,7 +73,7 @@ function Optional() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch(`${process.env.REACT_APP_API_BASE_URL}/users/${id}`, {
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/users`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -94,8 +94,7 @@ function Optional() {
         })
             .then((response) => response.json())
             .then((data) => {
-                setError(data.message);
-                console.log("inside fetch", error);
+                console.log(data);
             });
     };
 
