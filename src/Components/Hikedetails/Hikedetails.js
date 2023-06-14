@@ -12,7 +12,7 @@ const Hikedetails = () => {
     const { id } = useParams();
 
     const fetchHikeData = () => {
-        fetch(`http://localhost:3000/hikes/${id}`)
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/hikes/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setHike(data);
@@ -21,13 +21,13 @@ const Hikedetails = () => {
     };
 
     const fetchUserData = () => {
-        fetch("http://localhost:3000/users")
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/users`)
             .then((response) => response.json())
             .then((data) => setUsers(data));
     };
 
     const fetchHikerData = () => {
-        fetch("http://localhost:3000/hikelist")
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/hikelist`)
             .then((response) => response.json())
             .then((data) => setHikers(data));
     };
